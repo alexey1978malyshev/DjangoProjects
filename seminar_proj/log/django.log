@@ -1,0 +1,9 @@
+INFO 2024-05-07 23:50:31,155 autoreload 8328 9532 Watching for file changes with StatReloader
+INFO 2024-05-07 23:51:05,740 basehttp 8328 13708 "GET /game/random_num/ HTTP/1.1" 200 49
+INFO 2024-05-07 23:51:10,315 basehttp 8328 13708 "GET /game/random_num/ HTTP/1.1" 200 48
+INFO 2024-05-07 23:51:24,075 basehttp 8328 13708 "GET /game/cube/ HTTP/1.1" 200 93
+INFO 2024-05-07 23:51:29,650 basehttp 8328 13708 "GET /game/cube/ HTTP/1.1" 200 93
+INFO 2024-05-07 23:57:58,902 basehttp 8328 3904 "GET /prefix/ HTTP/1.1" 200 14
+INFO 2024-05-07 23:59:32,347 autoreload 10916 9064 Watching for file changes with StatReloader
+INFO 2024-05-08 00:01:34,023 basehttp 10916 544 "GET /prefix/ HTTP/1.1" 200 14
+INFO 2024-05-08 00:01:44,564 basehttp 10916 544 "GET /prefix/about/ HTTP/1.1" 200 27

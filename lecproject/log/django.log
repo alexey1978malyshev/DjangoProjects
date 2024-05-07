@@ -1,0 +1,49 @@
+Watching for file changes with StatReloader
+C:\Users\A9219\PycharmProjects\Django\newproject\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\A9219\PycharmProjects\Django\newproject\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\A9219\PycharmProjects\Django\newproject\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2170
+"GET /prefix HTTP/1.1" 301 0
+"GET /prefix/ HTTP/1.1" 200 14
+C:\Users\A9219\PycharmProjects\Django\newproject\newproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Index page accessed
+"GET /prefix/ HTTP/1.1" 200 14
+"GET /prefix/about HTTP/1.1" 301 0
+Error in about page: division by zero
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\newproject\myapp\views.py", line 17, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+"GET /prefix/about/ HTTP/1.1" 200 27
+C:\Users\A9219\PycharmProjects\Django\newproject\newproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\A9219\PycharmProjects\Django\newproject\newproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Error in about page: division by zero
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\newproject\myapp\views.py", line 17, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+"GET /prefix/about/ HTTP/1.1" 200 27
+Index page accessed
+"GET /prefix/ HTTP/1.1" 200 14
+Index page accessed
+"GET /prefix/ HTTP/1.1" 200 14
+C:\Users\A9219\PycharmProjects\Django\newproject\newproject\settings.py changed, reloading.
+INFO 2024-05-06 15:11:02,177 autoreload 11512 11872 Watching for file changes with StatReloader
+INFO 2024-05-06 15:11:05,335 views 11512 9204 Index page accessed
+INFO 2024-05-06 15:11:05,335 basehttp 11512 9204 "GET /prefix/ HTTP/1.1" 200 14
+ERROR 2024-05-06 15:11:10,190 views 11512 9204 Error in about page: division by zero
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\newproject\myapp\views.py", line 17, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+INFO 2024-05-06 15:11:10,190 basehttp 11512 9204 "GET /prefix/about/ HTTP/1.1" 200 27
