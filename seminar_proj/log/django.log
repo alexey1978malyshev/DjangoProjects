@@ -69,3 +69,7 @@ INFO 2024-05-08 12:57:05,150 autoreload 12004 14612 C:\Users\A9219\PycharmProjec
 INFO 2024-05-08 12:57:06,019 autoreload 10688 10992 Watching for file changes with StatReloader
 INFO 2024-05-08 12:57:12,633 autoreload 10688 10992 C:\Users\A9219\PycharmProjects\Django\seminar_proj\seminarapp\views.py changed, reloading.
 INFO 2024-05-08 12:57:13,411 autoreload 7896 3812 Watching for file changes with StatReloader
+WARNING 2024-05-08 15:20:10,999 log 7896 11716 Not Found: /
+WARNING 2024-05-08 15:20:11,015 basehttp 7896 11716 "GET / HTTP/1.1" 404 2277
+INFO 2024-05-08 15:21:02,771 autoreload 7896 3812 C:\Users\A9219\PycharmProjects\Django\seminar_proj\seminar_proj\urls.py changed, reloading.
+INFO 2024-05-08 15:21:04,039 autoreload 9708 7160 Watching for file changes with StatReloader
