@@ -7,3 +7,65 @@ INFO 2024-05-07 23:57:58,902 basehttp 8328 3904 "GET /prefix/ HTTP/1.1" 200 14
 INFO 2024-05-07 23:59:32,347 autoreload 10916 9064 Watching for file changes with StatReloader
 INFO 2024-05-08 00:01:34,023 basehttp 10916 544 "GET /prefix/ HTTP/1.1" 200 14
 INFO 2024-05-08 00:01:44,564 basehttp 10916 544 "GET /prefix/about/ HTTP/1.1" 200 27
+INFO 2024-05-08 12:41:54,189 autoreload 10916 9064 C:\Users\A9219\PycharmProjects\Django\seminar_proj\seminarapp\views.py changed, reloading.
+INFO 2024-05-08 12:41:55,022 autoreload 15168 6872 Watching for file changes with StatReloader
+INFO 2024-05-08 12:42:05,726 basehttp 15168 15016 "GET /prefix/ HTTP/1.1" 200 41
+WARNING 2024-05-08 12:42:06,207 log 15168 15016 Not Found: /favicon.ico
+INFO 2024-05-08 12:42:06,207 basehttp 15168 15016 - Broken pipe from ('127.0.0.1', 52971)
+INFO 2024-05-08 12:44:21,867 autoreload 15168 6872 C:\Users\A9219\PycharmProjects\Django\seminar_proj\seminarapp\views.py changed, reloading.
+INFO 2024-05-08 12:44:22,738 autoreload 1864 7380 Watching for file changes with StatReloader
+INFO 2024-05-08 12:45:40,460 autoreload 1864 7380 C:\Users\A9219\PycharmProjects\Django\seminar_proj\seminarapp\views.py changed, reloading.
+INFO 2024-05-08 12:45:41,662 autoreload 6100 12608 Watching for file changes with StatReloader
+INFO 2024-05-08 12:45:42,937 basehttp 6100 12212 "GET /prefix/ HTTP/1.1" 200 41
+INFO 2024-05-08 12:45:56,072 basehttp 6100 12212 "GET /prefix/ HTTP/1.1" 200 41
+INFO 2024-05-08 12:45:56,677 autoreload 6100 12608 C:\Users\A9219\PycharmProjects\Django\seminar_proj\seminarapp\views.py changed, reloading.
+INFO 2024-05-08 12:45:57,800 autoreload 11796 14752 Watching for file changes with StatReloader
+INFO 2024-05-08 12:45:59,916 basehttp 11796 1144 "GET /prefix/ HTTP/1.1" 200 70
+INFO 2024-05-08 12:47:11,310 basehttp 11796 1144 "GET /prefix/ HTTP/1.1" 200 70
+INFO 2024-05-08 12:48:32,806 basehttp 11796 1144 "GET /prefix/about/ HTTP/1.1" 200 27
+INFO 2024-05-08 12:53:56,404 autoreload 11796 14752 C:\Users\A9219\PycharmProjects\Django\seminar_proj\seminarapp\views.py changed, reloading.
+INFO 2024-05-08 12:53:57,392 autoreload 12344 9592 Watching for file changes with StatReloader
+ERROR 2024-05-08 12:54:02,130 log 12344 15184 Internal Server Error: /prefix/about/
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view seminarapp.views.about didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-05-08 12:54:02,130 basehttp 12344 15184 "GET /prefix/about/ HTTP/1.1" 500 70444
+ERROR 2024-05-08 12:54:17,172 log 12344 15184 Internal Server Error: /prefix/about/
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view seminarapp.views.about didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-05-08 12:54:17,188 basehttp 12344 15184 "GET /prefix/about/ HTTP/1.1" 500 70444
+INFO 2024-05-08 12:54:17,525 autoreload 12344 9592 C:\Users\A9219\PycharmProjects\Django\seminar_proj\seminarapp\views.py changed, reloading.
+INFO 2024-05-08 12:54:18,454 autoreload 2224 15296 Watching for file changes with StatReloader
+INFO 2024-05-08 12:54:21,744 basehttp 2224 14764 "GET /prefix/about/ HTTP/1.1" 200 160
+INFO 2024-05-08 12:54:41,057 basehttp 2224 14764 "GET /prefix/about/ HTTP/1.1" 200 160
+INFO 2024-05-08 12:54:41,799 autoreload 2224 15296 C:\Users\A9219\PycharmProjects\Django\seminar_proj\seminarapp\views.py changed, reloading.
+INFO 2024-05-08 12:54:42,589 autoreload 3784 6292 Watching for file changes with StatReloader
+INFO 2024-05-08 12:54:44,394 basehttp 3784 12836 "GET /prefix/about/ HTTP/1.1" 200 163
+INFO 2024-05-08 12:55:14,174 autoreload 3784 6292 C:\Users\A9219\PycharmProjects\Django\seminar_proj\seminarapp\views.py changed, reloading.
+INFO 2024-05-08 12:55:15,027 autoreload 11004 8520 Watching for file changes with StatReloader
+INFO 2024-05-08 12:55:19,751 basehttp 11004 8372 "GET /prefix/about/ HTTP/1.1" 200 173
+INFO 2024-05-08 12:55:53,645 autoreload 11004 8520 C:\Users\A9219\PycharmProjects\Django\seminar_proj\seminarapp\views.py changed, reloading.
+INFO 2024-05-08 12:55:54,547 autoreload 13688 14488 Watching for file changes with StatReloader
+INFO 2024-05-08 12:55:57,194 basehttp 13688 11212 "GET /prefix/about/ HTTP/1.1" 200 170
+INFO 2024-05-08 12:56:28,006 autoreload 13688 14488 C:\Users\A9219\PycharmProjects\Django\seminar_proj\seminarapp\views.py changed, reloading.
+INFO 2024-05-08 12:56:29,043 autoreload 13320 9392 Watching for file changes with StatReloader
+INFO 2024-05-08 12:56:51,208 autoreload 13320 9392 C:\Users\A9219\PycharmProjects\Django\seminar_proj\seminarapp\views.py changed, reloading.
+INFO 2024-05-08 12:56:52,179 autoreload 12004 14612 Watching for file changes with StatReloader
+INFO 2024-05-08 12:56:55,124 basehttp 12004 13864 "GET /prefix/about/ HTTP/1.1" 200 189
+INFO 2024-05-08 12:57:05,150 autoreload 12004 14612 C:\Users\A9219\PycharmProjects\Django\seminar_proj\seminarapp\views.py changed, reloading.
+INFO 2024-05-08 12:57:06,019 autoreload 10688 10992 Watching for file changes with StatReloader
+INFO 2024-05-08 12:57:12,633 autoreload 10688 10992 C:\Users\A9219\PycharmProjects\Django\seminar_proj\seminarapp\views.py changed, reloading.
+INFO 2024-05-08 12:57:13,411 autoreload 7896 3812 Watching for file changes with StatReloader
