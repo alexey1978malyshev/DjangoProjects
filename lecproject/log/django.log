@@ -47,3 +47,15 @@ Traceback (most recent call last):
              ~~^~~
 ZeroDivisionError: division by zero
 INFO 2024-05-06 15:11:10,190 basehttp 11512 9204 "GET /prefix/about/ HTTP/1.1" 200 27
+INFO 2024-05-08 21:09:14,669 autoreload 8124 12544 Watching for file changes with StatReloader
+INFO 2024-05-08 21:10:24,787 autoreload 7768 1740 Watching for file changes with StatReloader
+INFO 2024-05-08 22:50:38,873 autoreload 11244 13244 Watching for file changes with StatReloader
+INFO 2024-05-09 11:18:15,791 autoreload 14460 14156 Watching for file changes with StatReloader
+WARNING 2024-05-09 11:18:39,408 log 14460 6492 Not Found: /
+WARNING 2024-05-09 11:18:39,408 basehttp 14460 6492 "GET / HTTP/1.1" 404 2170
+WARNING 2024-05-09 11:18:52,376 log 14460 6492 Not Found: /
+WARNING 2024-05-09 11:18:52,376 basehttp 14460 6492 "GET / HTTP/1.1" 404 2170
+INFO 2024-05-09 11:19:37,809 autoreload 14460 14156 C:\Users\A9219\PycharmProjects\Django\lecproject\lecproject\urls.py changed, reloading.
+INFO 2024-05-09 11:19:38,856 autoreload 14852 9232 Watching for file changes with StatReloader
+INFO 2024-05-09 11:19:41,775 views 14852 11816 Index page accessed
+INFO 2024-05-09 11:19:41,775 basehttp 14852 11816 "GET / HTTP/1.1" 200 14

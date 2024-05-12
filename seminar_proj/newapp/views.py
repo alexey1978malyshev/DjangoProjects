@@ -1,16 +1,18 @@
 from django.http import HttpResponse
-from random import randint
+from django.utils import timezone
+from random import randint, choice
 import logging
+from newapp.models import Results
 
 
 logger = logging.getLogger(__name__)
 
 
 def orel_reshka(request):
-    result = randint(0, 1)
-    if result == 0:
-        return HttpResponse('Решка!')
-    return HttpResponse('Орел!!!')
+    result = choice(['Орел!!!', 'Решка!'])
+    res = Results(result=result)
+    res.save()
+    return HttpResponse(str(result))
 
 
 def cube(request):
@@ -21,3 +23,9 @@ def cube(request):
 def random_num(request):
     result = randint(0, 100)
     return HttpResponse(f'Случайное число от 0 до 100= {result}')
+
+
+def get_last_val(request):
+    val = Results.last_val()
+    s = '</br>'.join(str(v) for v in val)
+    return HttpResponse(s)
