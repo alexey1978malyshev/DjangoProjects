@@ -11,11 +11,16 @@ class Command(BaseCommand):
 
 
     def handle(self, *args, **kwargs):
+        # pk = kwargs.get('pk')
+        # customer = Customer.objects.filter(id=pk)
+        # product_id = kwargs.get('prod_id')
+
+        # order = Order(customer=Customer(customer), products=product_id, total_price=price)
+        # order.save()
+        # self.stdout.write(f'{order}')
         pk = kwargs.get('pk')
-        customer = Customer.objects.filter(id=pk)
         product_id = kwargs.get('prod_id')
         product = Product.objects.filter(id=product_id)
         price = Product(product).price
-        order = Order(customer=Customer(customer), products=product_id, total_price=price)
+        order = Order(customer=pk, products=product_id, total_price=price)
         order.save()
-        self.stdout.write(f'{order}')

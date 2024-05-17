@@ -59,3 +59,187 @@ INFO 2024-05-09 11:19:37,809 autoreload 14460 14156 C:\Users\A9219\PycharmProjec
 INFO 2024-05-09 11:19:38,856 autoreload 14852 9232 Watching for file changes with StatReloader
 INFO 2024-05-09 11:19:41,775 views 14852 11816 Index page accessed
 INFO 2024-05-09 11:19:41,775 basehttp 14852 11816 "GET / HTTP/1.1" 200 14
+INFO 2024-05-15 23:50:06,700 autoreload 11036 11360 Watching for file changes with StatReloader
+INFO 2024-05-15 23:51:44,365 autoreload 10008 10644 Watching for file changes with StatReloader
+INFO 2024-05-15 23:51:47,468 views 10008 15996 Index page accessed
+INFO 2024-05-15 23:51:47,477 basehttp 10008 15996 "GET / HTTP/1.1" 200 14
+WARNING 2024-05-15 23:52:09,700 log 10008 15996 Not Found: /lec3/
+WARNING 2024-05-15 23:52:09,700 basehttp 10008 15996 "GET /lec3/ HTTP/1.1" 404 2529
+WARNING 2024-05-15 23:52:43,252 log 10008 15996 Not Found: /les3/
+WARNING 2024-05-15 23:52:43,252 basehttp 10008 15996 "GET /les3/ HTTP/1.1" 404 2770
+INFO 2024-05-15 23:53:12,564 basehttp 10008 15996 "GET /les3/hello/ HTTP/1.1" 200 26
+INFO 2024-05-15 23:53:19,753 basehttp 10008 15996 "GET /les3/hello2/ HTTP/1.1" 200 23
+WARNING 2024-05-15 23:54:35,413 log 10008 15996 Not Found: /les3/hell
+WARNING 2024-05-15 23:54:35,418 basehttp 10008 15996 "GET /les3/hell HTTP/1.1" 404 2782
+WARNING 2024-05-15 23:54:41,734 log 10008 15996 Not Found: /les3/hellj
+WARNING 2024-05-15 23:54:41,744 basehttp 10008 15996 "GET /les3/hellj HTTP/1.1" 404 2785
+INFO 2024-05-15 23:54:51,588 basehttp 10008 15996 "GET /les3/hello2/ HTTP/1.1" 200 23
+INFO 2024-05-15 23:58:22,014 autoreload 10008 10644 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\urls.py changed, reloading.
+INFO 2024-05-15 23:58:23,700 autoreload 236 8868 Watching for file changes with StatReloader
+INFO 2024-05-15 23:58:45,743 autoreload 236 8868 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\urls.py changed, reloading.
+INFO 2024-05-15 23:58:48,065 autoreload 15332 9720 Watching for file changes with StatReloader
+INFO 2024-05-16 00:02:06,505 autoreload 15332 9720 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\views.py changed, reloading.
+INFO 2024-05-16 00:02:08,173 autoreload 13320 10080 Watching for file changes with StatReloader
+INFO 2024-05-16 00:03:58,191 autoreload 13320 10080 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\views.py changed, reloading.
+INFO 2024-05-16 00:03:59,591 autoreload 12368 15060 Watching for file changes with StatReloader
+INFO 2024-05-16 00:04:05,306 autoreload 12368 15060 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\views.py changed, reloading.
+INFO 2024-05-16 00:04:06,484 autoreload 13976 10920 Watching for file changes with StatReloader
+INFO 2024-05-16 00:05:09,504 autoreload 13976 10920 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\views.py changed, reloading.
+INFO 2024-05-16 00:05:11,379 autoreload 4112 8044 Watching for file changes with StatReloader
+INFO 2024-05-16 00:06:22,326 autoreload 4112 8044 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\views.py changed, reloading.
+INFO 2024-05-16 00:06:23,239 autoreload 2420 15252 Watching for file changes with StatReloader
+INFO 2024-05-16 00:06:59,425 autoreload 2420 15252 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\urls.py changed, reloading.
+INFO 2024-05-16 00:07:01,148 autoreload 14260 12776 Watching for file changes with StatReloader
+INFO 2024-05-16 00:07:13,769 autoreload 14260 12776 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\urls.py changed, reloading.
+INFO 2024-05-16 00:07:14,744 autoreload 7748 12976 Watching for file changes with StatReloader
+INFO 2024-05-16 00:07:17,783 basehttp 7748 9720 "GET /les3/posts/2022 HTTP/1.1" 301 0
+INFO 2024-05-16 00:07:17,798 basehttp 7748 13496 "GET /les3/posts/2022/ HTTP/1.1" 200 19
+INFO 2024-05-16 00:07:33,897 autoreload 7748 12976 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\urls.py changed, reloading.
+INFO 2024-05-16 00:07:35,421 autoreload 10568 16284 Watching for file changes with StatReloader
+INFO 2024-05-16 16:49:22,752 autoreload 7388 11656 Watching for file changes with StatReloader
+INFO 2024-05-16 16:51:50,174 autoreload 7388 11656 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\views.py changed, reloading.
+INFO 2024-05-16 16:51:52,629 autoreload 3076 9140 Watching for file changes with StatReloader
+INFO 2024-05-16 16:52:12,815 views 3076 11440 Index page accessed
+INFO 2024-05-16 16:52:12,815 basehttp 3076 11440 "GET / HTTP/1.1" 200 14
+WARNING 2024-05-16 16:52:29,452 log 3076 11440 Not Found: /les3/
+WARNING 2024-05-16 16:52:29,452 basehttp 3076 11440 "GET /les3/ HTTP/1.1" 404 3406
+WARNING 2024-05-16 16:52:51,942 log 3076 11440 Not Found: /les3/2022/3
+WARNING 2024-05-16 16:52:51,942 basehttp 3076 11440 "GET /les3/2022/3 HTTP/1.1" 404 3424
+INFO 2024-05-16 16:53:06,837 basehttp 3076 11440 "GET /les3/posts/2022/3 HTTP/1.1" 301 0
+INFO 2024-05-16 16:53:06,854 basehttp 3076 6876 "GET /les3/posts/2022/3/ HTTP/1.1" 200 26
+INFO 2024-05-16 16:53:43,557 autoreload 3076 9140 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\views.py changed, reloading.
+INFO 2024-05-16 16:53:44,593 autoreload 11816 1160 Watching for file changes with StatReloader
+INFO 2024-05-16 16:53:45,288 basehttp 11816 5344 "GET /les3/posts/2022/3/ HTTP/1.1" 200 25
+INFO 2024-05-16 17:11:28,744 views 11816 8428 Index page accessed
+INFO 2024-05-16 17:11:28,804 basehttp 11816 8428 "GET / HTTP/1.1" 200 14
+INFO 2024-05-16 17:11:53,824 views 11816 8428 Index page accessed
+INFO 2024-05-16 17:11:53,829 basehttp 11816 8428 "GET / HTTP/1.1" 200 14
+INFO 2024-05-16 17:12:04,614 basehttp 11816 8428 "GET /les3/posts/2022/3/ HTTP/1.1" 200 25
+INFO 2024-05-16 17:12:26,154 basehttp 11816 8428 "GET /les3/posts/2022/6/pythonnn HTTP/1.1" 301 0
+INFO 2024-05-16 17:12:26,179 basehttp 11816 7044 "GET /les3/posts/2022/6/pythonnn/ HTTP/1.1" 200 362
+INFO 2024-05-16 17:19:20,144 autoreload 11816 1160 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\views.py changed, reloading.
+INFO 2024-05-16 17:19:22,108 autoreload 9316 1912 Watching for file changes with StatReloader
+INFO 2024-05-16 17:19:52,014 autoreload 9316 1912 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\views.py changed, reloading.
+INFO 2024-05-16 17:19:53,556 autoreload 10208 1376 Watching for file changes with StatReloader
+INFO 2024-05-16 17:20:28,256 autoreload 10208 1376 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\views.py changed, reloading.
+INFO 2024-05-16 17:20:30,026 autoreload 8424 9400 Watching for file changes with StatReloader
+INFO 2024-05-16 17:20:38,114 autoreload 8424 9400 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\views.py changed, reloading.
+INFO 2024-05-16 17:20:40,076 autoreload 1460 11084 Watching for file changes with StatReloader
+INFO 2024-05-16 17:20:46,896 autoreload 1460 11084 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\views.py changed, reloading.
+INFO 2024-05-16 17:20:48,146 autoreload 8920 10448 Watching for file changes with StatReloader
+INFO 2024-05-16 17:24:01,644 autoreload 8920 10448 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\urls.py changed, reloading.
+INFO 2024-05-16 17:24:05,790 autoreload 8180 1496 Watching for file changes with StatReloader
+INFO 2024-05-16 17:24:12,809 basehttp 8180 9504 "GET /les3/ HTTP/1.1" 200 179
+WARNING 2024-05-16 17:24:12,974 log 8180 9504 Not Found: /favicon.ico
+WARNING 2024-05-16 17:24:12,979 basehttp 8180 9504 "GET /favicon.ico HTTP/1.1" 404 2547
+INFO 2024-05-16 22:52:03,557 autoreload 8180 1496 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\views.py changed, reloading.
+INFO 2024-05-16 22:52:05,990 autoreload 4680 7952 Watching for file changes with StatReloader
+INFO 2024-05-16 23:04:03,995 autoreload 4680 7952 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\views.py changed, reloading.
+INFO 2024-05-16 23:04:05,345 autoreload 10772 2088 Watching for file changes with StatReloader
+INFO 2024-05-16 23:05:33,169 autoreload 10772 2088 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\urls.py changed, reloading.
+INFO 2024-05-16 23:05:35,089 autoreload 2596 10676 Watching for file changes with StatReloader
+INFO 2024-05-16 23:06:04,869 basehttp 2596 792 "GET /les3/ HTTP/1.1" 200 179
+WARNING 2024-05-16 23:06:04,954 log 2596 792 Not Found: /favicon.ico
+WARNING 2024-05-16 23:06:04,964 basehttp 2596 792 "GET /favicon.ico HTTP/1.1" 404 2547
+INFO 2024-05-16 23:06:11,078 basehttp 2596 792 "GET /les3/if HTTP/1.1" 301 0
+INFO 2024-05-16 23:06:11,139 basehttp 2596 2200 "GET /les3/if/ HTTP/1.1" 200 321
+INFO 2024-05-16 23:06:51,853 autoreload 2596 10676 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\views.py changed, reloading.
+INFO 2024-05-16 23:06:53,208 autoreload 12836 12892 Watching for file changes with StatReloader
+INFO 2024-05-16 23:06:55,765 basehttp 12836 4436 "GET /les3/if/ HTTP/1.1" 200 319
+INFO 2024-05-16 23:16:26,201 autoreload 12836 12892 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\views.py changed, reloading.
+INFO 2024-05-16 23:16:28,048 autoreload 2380 7896 Watching for file changes with StatReloader
+INFO 2024-05-16 23:17:10,985 autoreload 2380 7896 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\views.py changed, reloading.
+INFO 2024-05-16 23:17:12,173 autoreload 11760 7720 Watching for file changes with StatReloader
+INFO 2024-05-16 23:18:44,047 autoreload 11760 7720 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\urls.py changed, reloading.
+INFO 2024-05-16 23:18:45,479 autoreload 10988 10612 Watching for file changes with StatReloader
+INFO 2024-05-16 23:19:14,698 autoreload 10988 10612 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\urls.py changed, reloading.
+INFO 2024-05-16 23:19:17,294 autoreload 1840 7452 Watching for file changes with StatReloader
+INFO 2024-05-16 23:19:31,134 basehttp 1840 11824 "GET /les3/for HTTP/1.1" 301 0
+INFO 2024-05-16 23:19:31,159 basehttp 1840 7420 "GET /les3/for/ HTTP/1.1" 200 797
+INFO 2024-05-16 23:21:08,998 basehttp 1840 7420 "GET /les3/for/ HTTP/1.1" 200 849
+INFO 2024-05-16 23:21:15,078 basehttp 1840 7420 "GET /les3/for/ HTTP/1.1" 200 849
+INFO 2024-05-16 23:22:09,052 basehttp 1840 7420 "GET /les3/for/ HTTP/1.1" 200 806
+INFO 2024-05-16 23:22:39,937 basehttp 1840 7420 "GET /les3/for/ HTTP/1.1" 200 804
+INFO 2024-05-17 15:06:07,891 autoreload 5780 11780 Watching for file changes with StatReloader
+INFO 2024-05-17 15:06:10,195 views 5780 6684 Index page accessed
+INFO 2024-05-17 15:06:10,217 basehttp 5780 6684 "GET / HTTP/1.1" 200 14
+WARNING 2024-05-17 15:06:10,764 log 5780 6684 Not Found: /favicon.ico
+WARNING 2024-05-17 15:06:10,771 basehttp 5780 6684 "GET /favicon.ico HTTP/1.1" 404 2547
+WARNING 2024-05-17 15:06:45,951 log 5780 6684 Not Found: /lec3
+WARNING 2024-05-17 15:06:45,951 basehttp 5780 6684 "GET /lec3 HTTP/1.1" 404 2526
+INFO 2024-05-17 15:07:02,211 basehttp 5780 6684 "GET /les3 HTTP/1.1" 301 0
+INFO 2024-05-17 15:07:02,251 basehttp 5780 14208 "GET /les3/ HTTP/1.1" 200 179
+INFO 2024-05-17 15:07:20,976 basehttp 5780 14208 "GET /les3/index HTTP/1.1" 200 213
+INFO 2024-05-17 15:07:35,526 basehttp 5780 14208 "GET /les3/about HTTP/1.1" 200 216
+INFO 2024-05-17 15:09:27,676 autoreload 5780 11780 C:\Users\A9219\PycharmProjects\Django\lecproject\lecproject\settings.py changed, reloading.
+INFO 2024-05-17 15:14:50,831 autoreload 5860 3320 Watching for file changes with StatReloader
+INFO 2024-05-17 15:14:53,646 basehttp 5860 7284 "GET /les3/about HTTP/1.1" 200 216
+INFO 2024-05-17 15:15:00,731 basehttp 5860 7284 "GET /les3/index HTTP/1.1" 200 273
+INFO 2024-05-17 15:16:33,614 autoreload 5860 3320 C:\Users\A9219\PycharmProjects\Django\lecproject\lecproject\urls.py changed, reloading.
+INFO 2024-05-17 15:16:34,961 autoreload 1420 4616 Watching for file changes with StatReloader
+INFO 2024-05-17 15:17:12,373 autoreload 1420 4616 C:\Users\A9219\PycharmProjects\Django\lecproject\lecproject\urls.py changed, reloading.
+INFO 2024-05-17 15:17:13,667 autoreload 6856 8428 Watching for file changes with StatReloader
+INFO 2024-05-17 15:17:26,651 basehttp 6856 7692 "GET / HTTP/1.1" 200 273
+INFO 2024-05-17 15:20:59,631 autoreload 6856 8428 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\models.py changed, reloading.
+INFO 2024-05-17 15:21:00,621 autoreload 4408 13860 Watching for file changes with StatReloader
+INFO 2024-05-17 17:02:21,508 autoreload 13480 11444 Watching for file changes with StatReloader
+INFO 2024-05-17 17:02:33,135 basehttp 13480 13820 "GET / HTTP/1.1" 200 276
+INFO 2024-05-17 17:45:51,407 basehttp 13480 11904 "GET /les3/author/5 HTTP/1.1" 301 0
+INFO 2024-05-17 17:45:51,487 basehttp 13480 2552 "GET /les3/author/5/ HTTP/1.1" 200 1250
+INFO 2024-05-17 17:46:51,752 basehttp 13480 2552 "GET /les3/post/50/ HTTP/1.1" 200 640
+INFO 2024-05-17 17:46:56,067 basehttp 13480 2552 "GET /les3/post/46/ HTTP/1.1" 200 650
+INFO 2024-05-17 17:48:23,054 basehttp 13480 2552 "GET /les3/author/5/ HTTP/1.1" 200 1250
+INFO 2024-05-17 17:48:25,932 basehttp 13480 2552 "GET /les3/author/5/ HTTP/1.1" 200 1146
+INFO 2024-05-17 17:48:30,377 basehttp 13480 2552 "GET /les3/post/46/ HTTP/1.1" 200 650
+INFO 2024-05-17 17:48:34,917 basehttp 13480 2552 "GET /les3/post/47/ HTTP/1.1" 200 721
+INFO 2024-05-17 17:48:37,777 basehttp 13480 2552 "GET /les3/post/48/ HTTP/1.1" 200 685
+INFO 2024-05-17 17:48:39,397 basehttp 13480 2552 "GET /les3/author/5/ HTTP/1.1" 200 1146
+INFO 2024-05-17 17:48:42,137 basehttp 13480 2552 "GET /les3/author/5/ HTTP/1.1" 200 1146
+INFO 2024-05-17 17:48:51,952 basehttp 13480 2552 "GET /les3/post/50/ HTTP/1.1" 200 640
+INFO 2024-05-17 17:49:18,102 basehttp 13480 2552 "GET /les3/post/41 HTTP/1.1" 301 0
+INFO 2024-05-17 17:49:18,127 basehttp 13480 7752 "GET /les3/post/41/ HTTP/1.1" 200 675
+WARNING 2024-05-17 17:49:27,592 log 13480 7752 Not Found: /les3/post/401/
+WARNING 2024-05-17 17:49:27,592 basehttp 13480 7752 "GET /les3/post/401/ HTTP/1.1" 404 4621
+INFO 2024-05-17 17:49:35,702 basehttp 13480 7752 "GET /les3/post/40/ HTTP/1.1" 200 661
+INFO 2024-05-17 17:49:58,702 basehttp 13480 7752 "GET /les3/post/47/ HTTP/1.1" 200 721
+INFO 2024-05-17 18:01:52,057 autoreload 6488 5644 Watching for file changes with StatReloader
+INFO 2024-05-17 18:02:03,932 basehttp 6488 11496 "GET / HTTP/1.1" 200 276
+WARNING 2024-05-17 18:02:15,507 log 6488 11496 Not Found: /about
+WARNING 2024-05-17 18:02:15,512 basehttp 6488 11496 "GET /about HTTP/1.1" 404 2408
+INFO 2024-05-17 18:02:29,412 basehttp 6488 11496 "GET /les3/ HTTP/1.1" 200 179
+INFO 2024-05-17 18:02:41,307 basehttp 6488 11496 "GET /les3/about HTTP/1.1" 200 270
+WARNING 2024-05-17 18:02:41,377 basehttp 6488 11496 "GET /static/my_app3/step1.jpg HTTP/1.1" 404 1810
+INFO 2024-05-17 18:03:16,089 basehttp 6488 2940 "GET /les3/about HTTP/1.1" 200 270
+WARNING 2024-05-17 18:03:16,120 basehttp 6488 2940 "GET /static/my_app3/step1.jpg HTTP/1.1" 404 1810
+INFO 2024-05-17 18:03:18,402 basehttp 6488 7520 "GET /les3/about HTTP/1.1" 200 269
+INFO 2024-05-17 18:03:18,552 basehttp 6488 7520 "GET /static/myapp3/step1.jpg HTTP/1.1" 200 60528
+INFO 2024-05-17 18:04:26,268 basehttp 6488 7520 "GET /les3/about HTTP/1.1" 200 276
+INFO 2024-05-17 18:04:28,100 basehttp 6488 7520 "GET /les3/about HTTP/1.1" 200 276
+INFO 2024-05-17 18:04:28,887 basehttp 6488 7520 "GET /les3/about HTTP/1.1" 200 276
+INFO 2024-05-17 18:04:29,367 basehttp 6488 7520 "GET /les3/about HTTP/1.1" 200 276
+INFO 2024-05-17 18:04:29,607 basehttp 6488 7520 "GET /les3/about HTTP/1.1" 200 276
+INFO 2024-05-17 18:04:29,807 basehttp 6488 7520 "GET /les3/about HTTP/1.1" 200 276
+INFO 2024-05-17 18:04:39,162 basehttp 6488 7520 "GET /les3/ HTTP/1.1" 200 179
+INFO 2024-05-17 18:06:07,507 basehttp 6488 7520 "GET /les3/ HTTP/1.1" 200 179
+INFO 2024-05-17 18:06:08,287 autoreload 6488 5644 C:\Users\A9219\PycharmProjects\Django\lecproject\myapp3\views.py changed, reloading.
+INFO 2024-05-17 18:06:09,995 autoreload 4128 9856 Watching for file changes with StatReloader
+INFO 2024-05-17 18:06:10,387 basehttp 4128 1300 "GET /les3/ HTTP/1.1" 200 180
+INFO 2024-05-17 18:06:22,602 basehttp 4128 1300 "GET /les3/about HTTP/1.1" 200 276
+INFO 2024-05-17 18:08:02,818 basehttp 4128 1300 "GET / HTTP/1.1" 200 276
+INFO 2024-05-17 18:08:31,162 basehttp 4128 1300 "GET /les3/ HTTP/1.1" 200 180
+INFO 2024-05-17 18:08:39,002 basehttp 4128 1300 "GET /les3/about HTTP/1.1" 200 271
+WARNING 2024-05-17 18:08:39,102 log 4128 1300 Not Found: /les3/'myapp3/step1.jpg'
+WARNING 2024-05-17 18:08:39,127 basehttp 4128 1300 "GET /les3/'myapp3/step1.jpg' HTTP/1.1" 404 4620
+INFO 2024-05-17 18:08:50,559 basehttp 4128 1300 "GET /les3/about HTTP/1.1" 200 271
+WARNING 2024-05-17 18:08:50,618 log 4128 1300 Not Found: /les3/'myapp3/step1.jpg'
+WARNING 2024-05-17 18:08:50,622 basehttp 4128 1300 "GET /les3/'myapp3/step1.jpg' HTTP/1.1" 404 4620
+INFO 2024-05-17 18:08:52,887 basehttp 4128 1300 "GET /les3/about HTTP/1.1" 200 269
+WARNING 2024-05-17 18:08:52,934 log 4128 1300 Not Found: /les3/myapp3/step1.jpg
+WARNING 2024-05-17 18:08:52,937 basehttp 4128 1300 "GET /les3/myapp3/step1.jpg HTTP/1.1" 404 4584
+INFO 2024-05-17 18:09:17,827 basehttp 4128 1300 "GET /les3/about HTTP/1.1" 200 269
+WARNING 2024-05-17 18:09:17,882 log 4128 1300 Not Found: /les3/myapp3/step1.jpg
+WARNING 2024-05-17 18:09:17,897 basehttp 4128 1300 "GET /les3/myapp3/step1.jpg HTTP/1.1" 404 4584
+INFO 2024-05-17 18:09:23,119 basehttp 4128 1300 "GET /les3/about HTTP/1.1" 200 276
+INFO 2024-05-17 18:10:24,572 basehttp 4128 1300 "GET /les3/post/47/ HTTP/1.1" 200 721
+INFO 2024-05-17 18:10:27,577 basehttp 4128 1300 "GET /les3/post/47/ HTTP/1.1" 200 721
+INFO 2024-05-17 18:10:33,412 basehttp 4128 1300 "GET /les3/post/47/ HTTP/1.1" 200 721

@@ -748,3 +748,2196 @@ WARNING 2024-05-13 00:43:54,456 basehttp 616 1304 "GET /shop/get_all_products/ H
 INFO 2024-05-13 00:44:08,551 basehttp 616 1304 "GET /shop/ HTTP/1.1" 200 30
 INFO 2024-05-13 00:46:25,731 autoreload 616 3532 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
 INFO 2024-05-13 00:46:26,885 autoreload 9768 12156 Watching for file changes with StatReloader
+INFO 2024-05-18 00:13:31,659 autoreload 13968 7256 Watching for file changes with StatReloader
+INFO 2024-05-18 00:14:29,859 autoreload 13968 7256 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\urls.py changed, reloading.
+INFO 2024-05-18 00:14:30,897 autoreload 12548 1504 Watching for file changes with StatReloader
+INFO 2024-05-18 00:14:39,751 basehttp 12548 4052 "GET / HTTP/1.1" 200 70
+INFO 2024-05-18 00:14:51,057 basehttp 12548 4052 "GET /shop HTTP/1.1" 301 0
+ERROR 2024-05-18 00:14:51,427 log 12548 4624 Internal Server Error: /shop/
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 8, in index
+    return render(request, 'shopapp/index.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-05-18 00:14:51,437 basehttp 12548 4624 "GET /shop/ HTTP/1.1" 500 134127
+INFO 2024-05-18 00:15:40,111 basehttp 12548 4624 "GET /shop/ HTTP/1.1" 200 250
+INFO 2024-05-18 00:19:16,591 autoreload 12548 1504 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-18 00:19:19,141 autoreload 236 2424 Watching for file changes with StatReloader
+ERROR 2024-05-18 00:19:30,765 log 236 12656 Internal Server Error: /shop/about
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: myapp3/base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 12, in about
+    return render(request, "shopapp/about.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: myapp3/base.html
+ERROR 2024-05-18 00:19:30,800 basehttp 236 12656 "GET /shop/about HTTP/1.1" 500 133816
+INFO 2024-05-18 00:19:47,275 basehttp 236 12656 "GET /shop/about HTTP/1.1" 200 276
+WARNING 2024-05-18 00:19:47,360 basehttp 236 12656 "GET /static/myapp3/step1.jpg HTTP/1.1" 404 1807
+INFO 2024-05-18 00:21:02,188 basehttp 236 6572 "GET /shop/ HTTP/1.1" 200 265
+ERROR 2024-05-18 00:23:29,912 log 236 7720 Internal Server Error: /shop/
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 8, in index
+    return render(request, 'shopapp/index.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 1380, in url
+    viewname = parser.compile_filter(bits[1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '{{' from '{{'
+ERROR 2024-05-18 00:23:30,022 basehttp 236 7720 "GET /shop/ HTTP/1.1" 500 174847
+ERROR 2024-05-18 00:23:59,284 log 236 7720 Internal Server Error: /shop/
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 8, in index
+    return render(request, 'shopapp/index.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'name' not found. 'name' is not a valid view function or pattern name.
+ERROR 2024-05-18 00:23:59,311 basehttp 236 7720 "GET /shop/ HTTP/1.1" 500 161709
+ERROR 2024-05-18 00:24:00,809 log 236 7720 Internal Server Error: /shop/
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 8, in index
+    return render(request, 'shopapp/index.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'name' not found. 'name' is not a valid view function or pattern name.
+ERROR 2024-05-18 00:24:00,814 basehttp 236 7720 "GET /shop/ HTTP/1.1" 500 161709
+ERROR 2024-05-18 00:24:42,553 log 236 7720 Internal Server Error: /shop/
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 8, in index
+    return render(request, 'shopapp/index.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'name' not found. 'name' is not a valid view function or pattern name.
+ERROR 2024-05-18 00:24:42,573 basehttp 236 7720 "GET /shop/ HTTP/1.1" 500 161709
+ERROR 2024-05-18 00:24:44,963 log 236 7720 Internal Server Error: /shop/
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 8, in index
+    return render(request, 'shopapp/index.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'name' not found. 'name' is not a valid view function or pattern name.
+ERROR 2024-05-18 00:24:44,988 basehttp 236 7720 "GET /shop/ HTTP/1.1" 500 161926
+INFO 2024-05-18 00:26:01,787 basehttp 236 7720 "GET /shop/ HTTP/1.1" 200 276
+INFO 2024-05-18 00:26:05,356 basehttp 236 7720 "GET /shop/about HTTP/1.1" 200 276
+WARNING 2024-05-18 00:26:05,436 basehttp 236 7720 "GET /static/myapp3/step1.jpg HTTP/1.1" 404 1807
+INFO 2024-05-18 00:26:11,225 basehttp 236 6044 "GET /shop/about HTTP/1.1" 200 276
+WARNING 2024-05-18 00:26:11,281 basehttp 236 6044 "GET /static/myapp3/step1.jpg HTTP/1.1" 404 1807
+INFO 2024-05-18 00:27:13,815 basehttp 236 7536 "GET /shop/about HTTP/1.1" 200 277
+WARNING 2024-05-18 00:27:14,077 basehttp 236 7536 "GET /static/shopapp/step1.jpg HTTP/1.1" 404 1810
+INFO 2024-05-18 00:27:39,234 basehttp 236 6068 "GET /shop/about HTTP/1.1" 200 277
+WARNING 2024-05-18 00:27:39,252 basehttp 236 6068 "GET /static/shopapp/step1.jpg HTTP/1.1" 404 1810
+INFO 2024-05-18 00:28:06,653 basehttp 236 2408 "GET /shop/about HTTP/1.1" 200 277
+WARNING 2024-05-18 00:28:06,703 basehttp 236 2408 "GET /static/shopapp/step1.jpg HTTP/1.1" 404 1810
+INFO 2024-05-18 00:28:09,338 basehttp 236 7184 "GET /shop/about HTTP/1.1" 200 277
+WARNING 2024-05-18 00:28:09,393 basehttp 236 7184 "GET /static/shopapp/step1.jpg HTTP/1.1" 404 1810
+INFO 2024-05-18 00:28:20,358 basehttp 236 11180 "GET /shop/about HTTP/1.1" 200 270
+WARNING 2024-05-18 00:28:20,398 basehttp 236 11180 "GET /static/shopapp/step1.jpg HTTP/1.1" 404 1810
+INFO 2024-05-18 00:28:22,054 basehttp 236 4624 "GET /shop/about HTTP/1.1" 200 270
+WARNING 2024-05-18 00:28:22,103 basehttp 236 4624 "GET /static/shopapp/step1.jpg HTTP/1.1" 404 1810
+INFO 2024-05-18 00:28:22,803 basehttp 236 13740 "GET /shop/about HTTP/1.1" 200 270
+WARNING 2024-05-18 00:28:22,853 basehttp 236 13740 "GET /static/shopapp/step1.jpg HTTP/1.1" 404 1810
+INFO 2024-05-18 00:30:51,488 basehttp 236 13932 "GET /shop/about HTTP/1.1" 200 270
+WARNING 2024-05-18 00:30:51,549 basehttp 236 13932 "GET /static/shopapp/step1.jpg HTTP/1.1" 404 1810
+INFO 2024-05-18 00:33:58,311 basehttp 236 7696 "GET /shop/about HTTP/1.1" 200 271
+WARNING 2024-05-18 00:33:58,603 basehttp 236 7696 "GET /static/shopapp/step1.jpg HTTP/1.1" 404 1810
+INFO 2024-05-18 00:34:27,562 basehttp 236 13576 "GET /shop/about HTTP/1.1" 200 271
+WARNING 2024-05-18 00:34:27,614 basehttp 236 13576 "GET /static/shopapp/step1.jpg HTTP/1.1" 404 1810
+INFO 2024-05-18 00:36:24,960 basehttp 236 7552 "GET /shop/about HTTP/1.1" 200 272
+WARNING 2024-05-18 00:36:25,053 basehttp 236 7552 "GET /static/.shopapp/step1.jpg HTTP/1.1" 404 1813
+INFO 2024-05-18 00:36:30,667 basehttp 236 836 "GET /shop/about HTTP/1.1" 200 271
+WARNING 2024-05-18 00:36:30,719 basehttp 236 836 "GET /static/shopapp/step1.jpg HTTP/1.1" 404 1810
+INFO 2024-05-18 00:36:35,408 basehttp 236 6960 "GET /shop/about HTTP/1.1" 200 271
+WARNING 2024-05-18 00:36:35,488 basehttp 236 6960 "GET /static/shopapp/step1.jpg HTTP/1.1" 404 1810
+INFO 2024-05-18 00:37:18,437 basehttp 236 6508 "GET /shop/about HTTP/1.1" 200 271
+WARNING 2024-05-18 00:37:18,477 basehttp 236 6508 "GET /static/shopapp.step1.jpg HTTP/1.1" 404 1810
+INFO 2024-05-18 00:37:19,812 basehttp 236 14036 "GET /shop/about HTTP/1.1" 200 271
+WARNING 2024-05-18 00:37:19,862 basehttp 236 14036 "GET /static/shopapp.step1.jpg HTTP/1.1" 404 1810
+INFO 2024-05-18 00:40:52,238 basehttp 236 13200 "GET /shop/about HTTP/1.1" 200 271
+WARNING 2024-05-18 00:40:52,328 basehttp 236 13200 "GET /static/shopapp/step1.jpg HTTP/1.1" 404 1810
+INFO 2024-05-18 00:40:57,283 basehttp 236 7720 "GET /shop/ HTTP/1.1" 200 276
+INFO 2024-05-18 00:41:01,113 basehttp 236 7720 "GET /shop/about HTTP/1.1" 200 271
+WARNING 2024-05-18 00:41:01,168 basehttp 236 7720 "GET /static/shopapp/step1.jpg HTTP/1.1" 404 1810
+INFO 2024-05-18 11:14:24,730 autoreload 2660 2920 Watching for file changes with StatReloader
+INFO 2024-05-18 11:14:27,975 basehttp 2660 14920 "GET / HTTP/1.1" 200 70
+INFO 2024-05-18 11:14:48,024 basehttp 2660 14920 "GET /shop/ HTTP/1.1" 200 276
+ERROR 2024-05-18 11:14:50,247 log 2660 14920 Internal Server Error: /shop/about
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 13, in about
+    context = {"age": (timezone.datetime.now.year - 1978),
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'builtin_function_or_method' object has no attribute 'year'
+ERROR 2024-05-18 11:14:50,253 basehttp 2660 14920 "GET /shop/about HTTP/1.1" 500 69599
+INFO 2024-05-18 11:17:25,405 autoreload 2660 2920 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-18 11:17:26,199 autoreload 6028 15236 Watching for file changes with StatReloader
+ERROR 2024-05-18 11:17:28,036 log 6028 9316 Internal Server Error: /shop/about
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 13, in about
+    context = {"age": (timezone.datetime.now.year() - 1978),
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'builtin_function_or_method' object has no attribute 'year'
+ERROR 2024-05-18 11:17:28,052 basehttp 6028 9316 "GET /shop/about HTTP/1.1" 500 69603
+INFO 2024-05-18 11:17:40,702 autoreload 6028 15236 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-18 11:17:41,526 autoreload 3820 13484 Watching for file changes with StatReloader
+ERROR 2024-05-18 11:17:45,925 log 3820 1564 Internal Server Error: /shop/about
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 13, in about
+    context = {"age": (timezone.datetime.now().year - 1978),
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'int' object is not callable
+ERROR 2024-05-18 11:17:45,925 basehttp 3820 1564 "GET /shop/about HTTP/1.1" 500 69417
+INFO 2024-05-18 11:17:46,713 autoreload 3820 13484 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-18 11:17:47,647 autoreload 9956 8132 Watching for file changes with StatReloader
+INFO 2024-05-18 11:17:50,108 basehttp 9956 13004 "GET /shop/about HTTP/1.1" 200 452
+INFO 2024-05-18 11:17:50,253 basehttp 9956 13004 "GET /static/shopapp/step1.jpg HTTP/1.1" 200 60528
+INFO 2024-05-18 11:18:59,677 autoreload 9956 8132 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-18 11:19:00,942 autoreload 3864 6116 Watching for file changes with StatReloader
+INFO 2024-05-18 11:19:02,419 basehttp 3864 12780 "GET /shop/about HTTP/1.1" 200 445
+INFO 2024-05-18 11:19:24,376 basehttp 3864 12780 "GET /shop/about HTTP/1.1" 200 457
+ERROR 2024-05-18 11:25:32,978 log 3864 14500 Internal Server Error: /shop/about
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: '%'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 16, in about
+    return render(request, "shopapp/about.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 960, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 893, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 896, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '%' from '%'
+ERROR 2024-05-18 11:25:33,109 basehttp 3864 14500 "GET /shop/about HTTP/1.1" 500 209743
+ERROR 2024-05-18 11:27:20,857 log 3864 14500 Internal Server Error: /shop/about
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: '(age'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 16, in about
+    return render(request, "shopapp/about.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 960, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 893, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 896, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '(age' from '(age'
+ERROR 2024-05-18 11:27:20,922 basehttp 3864 14500 "GET /shop/about HTTP/1.1" 500 209760
+INFO 2024-05-18 11:28:04,722 basehttp 3864 14500 "GET /shop/about HTTP/1.1" 200 517
+INFO 2024-05-18 11:29:48,338 autoreload 3864 6116 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-18 11:29:49,908 autoreload 8812 3004 Watching for file changes with StatReloader
+ERROR 2024-05-18 11:30:07,706 log 8812 4552 Internal Server Error: /shop/about
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: '{{last_sym_age}}'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 18, in about
+    return render(request, "shopapp/about.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 960, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 893, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 896, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '{{last_sym_age}}' from '{{last_sym_age}}'
+ERROR 2024-05-18 11:30:07,737 basehttp 8812 4552 "GET /shop/about HTTP/1.1" 500 210107
+INFO 2024-05-18 11:31:09,406 autoreload 8812 3004 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-18 11:31:10,366 autoreload 7148 2628 Watching for file changes with StatReloader
+ERROR 2024-05-18 11:31:11,633 log 7148 14744 Internal Server Error: /shop/about
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: '{{'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 18, in about
+    return render(request, "shopapp/about.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 960, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 893, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 896, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '{{' from '{{'
+ERROR 2024-05-18 11:31:11,648 basehttp 7148 14744 "GET /shop/about HTTP/1.1" 500 209925
+ERROR 2024-05-18 11:31:50,460 log 7148 14744 Internal Server Error: /shop/about
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: '{{'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 18, in about
+    return render(request, "shopapp/about.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 960, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 893, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 896, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '{{' from '{{'
+ERROR 2024-05-18 11:31:50,476 basehttp 7148 14744 "GET /shop/about HTTP/1.1" 500 209850
+ERROR 2024-05-18 11:33:06,587 log 7148 14744 Internal Server Error: /shop/about
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: 'age/6'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 18, in about
+    return render(request, "shopapp/about.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 960, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 893, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 896, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '/6' from 'age/6'
+ERROR 2024-05-18 11:33:06,597 basehttp 7148 14744 "GET /shop/about HTTP/1.1" 500 210416
+INFO 2024-05-18 11:33:24,674 basehttp 7148 14744 "GET /shop/about HTTP/1.1" 200 516
+INFO 2024-05-18 11:34:18,088 basehttp 7148 14744 "GET /shop/about HTTP/1.1" 200 516
+INFO 2024-05-18 11:34:53,432 basehttp 7148 14744 "GET /shop/about HTTP/1.1" 200 516
+INFO 2024-05-18 11:34:59,598 basehttp 7148 14744 "GET /shop/about HTTP/1.1" 200 517
+INFO 2024-05-18 11:35:25,573 autoreload 7148 2628 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-18 11:35:26,458 autoreload 14896 7388 Watching for file changes with StatReloader
+INFO 2024-05-18 11:35:30,791 basehttp 14896 3804 "GET /shop/about HTTP/1.1" 200 519
+INFO 2024-05-18 11:36:17,252 autoreload 14896 7388 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-18 11:36:18,825 autoreload 11112 6096 Watching for file changes with StatReloader
+INFO 2024-05-18 11:36:21,472 basehttp 11112 7848 "GET /shop/about HTTP/1.1" 200 517
+INFO 2024-05-18 11:37:07,720 basehttp 11112 7848 "GET /shop/about HTTP/1.1" 200 517
+INFO 2024-05-18 11:37:13,219 basehttp 11112 7848 "GET /shop/about HTTP/1.1" 200 517
+INFO 2024-05-18 11:37:14,500 basehttp 11112 7848 "GET /shop/about HTTP/1.1" 200 517
+INFO 2024-05-18 11:37:41,785 basehttp 11112 7848 "GET /shop/about HTTP/1.1" 200 517
+INFO 2024-05-18 11:37:44,237 basehttp 11112 7848 "GET /shop/about HTTP/1.1" 200 517
+INFO 2024-05-18 11:37:45,034 basehttp 11112 7848 "GET /shop/about HTTP/1.1" 200 517
+INFO 2024-05-18 11:37:51,803 basehttp 11112 7848 "GET /shop/ HTTP/1.1" 200 276
+INFO 2024-05-18 11:38:14,451 basehttp 11112 7848 "GET /shop/ HTTP/1.1" 200 276
+INFO 2024-05-18 11:38:20,378 basehttp 11112 7848 "GET /shop/ HTTP/1.1" 200 276
+INFO 2024-05-18 11:38:21,170 basehttp 11112 7848 "GET /shop/ HTTP/1.1" 200 276
+INFO 2024-05-18 11:39:03,821 basehttp 11112 7848 "GET /shop/ HTTP/1.1" 200 276
+INFO 2024-05-18 11:39:06,052 basehttp 11112 7848 "GET /shop/ HTTP/1.1" 200 276
+INFO 2024-05-18 11:39:08,698 basehttp 11112 7848 "GET /shop/ HTTP/1.1" 200 276
+INFO 2024-05-18 11:39:10,632 basehttp 11112 7848 "GET /shop/about HTTP/1.1" 200 517
+INFO 2024-05-18 12:08:05,370 basehttp 11112 2488 "GET /shop/about HTTP/1.1" 200 517
+INFO 2024-05-18 12:08:30,096 basehttp 11112 2488 "GET /shop/about HTTP/1.1" 200 517
+INFO 2024-05-18 12:09:06,602 basehttp 11112 2488 "GET /shop/about HTTP/1.1" 200 584
+INFO 2024-05-18 12:09:50,006 basehttp 11112 2488 "GET /shop/about HTTP/1.1" 200 602
+INFO 2024-05-18 12:12:22,349 autoreload 11112 6096 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-18 12:12:23,305 autoreload 11296 13944 Watching for file changes with StatReloader
+INFO 2024-05-18 12:12:23,888 basehttp 11296 2540 "GET /shop/about HTTP/1.1" 200 636
+INFO 2024-05-18 12:13:04,392 autoreload 11296 13944 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-18 12:13:05,278 autoreload 15244 5840 Watching for file changes with StatReloader
+ERROR 2024-05-18 12:13:07,081 log 15244 2596 Internal Server Error: /shop/about
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 19, in about
+    "country": locale.getlocale().index(1) ,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: tuple.index(x): x not in tuple
+ERROR 2024-05-18 12:13:07,113 basehttp 15244 2596 "GET /shop/about HTTP/1.1" 500 69460
+INFO 2024-05-18 12:13:12,523 autoreload 15244 5840 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-18 12:13:13,825 autoreload 14040 11668 Watching for file changes with StatReloader
+ERROR 2024-05-18 12:13:15,481 log 14040 6060 Internal Server Error: /shop/about
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 19, in about
+    "country": locale.getlocale().index() ,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: index expected at least 1 argument, got 0
+ERROR 2024-05-18 12:13:15,481 basehttp 14040 6060 "GET /shop/about HTTP/1.1" 500 69494
+INFO 2024-05-18 12:13:32,509 autoreload 14040 11668 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-18 12:13:33,769 autoreload 12312 4488 Watching for file changes with StatReloader
+ERROR 2024-05-18 12:13:34,400 log 12312 3340 Internal Server Error: /shop/about
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 19, in about
+    "country": locale.getlocale().index(0) ,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: tuple.index(x): x not in tuple
+ERROR 2024-05-18 12:13:34,410 basehttp 12312 3340 "GET /shop/about HTTP/1.1" 500 69460
+ERROR 2024-05-18 12:13:37,339 log 12312 3340 Internal Server Error: /shop/about
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 19, in about
+    "country": locale.getlocale().index(0) ,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: tuple.index(x): x not in tuple
+ERROR 2024-05-18 12:13:37,355 basehttp 12312 3340 "GET /shop/about HTTP/1.1" 500 69460
+INFO 2024-05-18 12:13:58,328 autoreload 12312 4488 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-18 12:13:59,262 autoreload 3736 10800 Watching for file changes with StatReloader
+INFO 2024-05-18 12:14:01,546 basehttp 3736 11992 "GET /shop/about HTTP/1.1" 200 604
+INFO 2024-05-18 12:14:52,002 autoreload 3736 10800 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-18 12:14:52,955 autoreload 4144 4252 Watching for file changes with StatReloader
+INFO 2024-05-18 12:14:53,637 basehttp 4144 14032 "GET /shop/about HTTP/1.1" 200 596
+INFO 2024-05-18 12:16:22,545 basehttp 4144 14032 "GET /shop/about HTTP/1.1" 200 596
+INFO 2024-05-18 12:16:22,678 autoreload 4144 4252 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-18 12:16:23,623 autoreload 8488 4304 Watching for file changes with StatReloader
+INFO 2024-05-18 12:16:59,970 basehttp 8488 6096 "GET /shop/about HTTP/1.1" 200 644
+INFO 2024-05-18 12:25:11,735 basehttp 8488 7148 "GET /shop/about HTTP/1.1" 200 646
+WARNING 2024-05-18 12:25:11,784 basehttp 8488 7148 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 404 1816
+INFO 2024-05-18 12:25:24,499 basehttp 8488 4788 "GET /shop/about HTTP/1.1" 200 646
+WARNING 2024-05-18 12:25:24,569 basehttp 8488 4788 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 404 1816
+INFO 2024-05-18 12:25:37,382 autoreload 7348 8320 Watching for file changes with StatReloader
+INFO 2024-05-18 12:25:42,354 basehttp 7348 12620 "GET /shop/ HTTP/1.1" 200 277
+INFO 2024-05-18 12:25:44,205 basehttp 7348 12620 "GET /shop/about HTTP/1.1" 200 646
+WARNING 2024-05-18 12:25:44,268 basehttp 7348 12620 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 404 1816
+INFO 2024-05-18 12:26:08,262 basehttp 7348 9984 "GET / HTTP/1.1" 200 70
+INFO 2024-05-18 12:26:17,331 basehttp 7348 9984 "GET /shop/ HTTP/1.1" 200 277
+INFO 2024-05-18 12:26:23,703 basehttp 7348 9984 "GET /shop/about HTTP/1.1" 200 646
+WARNING 2024-05-18 12:26:23,765 basehttp 7348 9984 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 404 1816
+INFO 2024-05-18 12:26:43,089 basehttp 7348 704 "GET /shop/about HTTP/1.1" 200 644
+INFO 2024-05-18 12:27:08,033 basehttp 7348 704 "GET /shop/about HTTP/1.1" 200 646
+WARNING 2024-05-18 12:27:08,080 basehttp 7348 704 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 404 1816
+INFO 2024-05-18 12:27:33,529 autoreload 11116 3568 Watching for file changes with StatReloader
+INFO 2024-05-18 12:27:36,506 basehttp 11116 1644 "GET /shop/about HTTP/1.1" 200 646
+WARNING 2024-05-18 12:27:36,561 basehttp 11116 1644 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 404 1816
+INFO 2024-05-18 12:41:07,781 basehttp 11116 6924 "GET /shop/about HTTP/1.1" 200 646
+WARNING 2024-05-18 12:41:07,861 basehttp 11116 6924 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 404 1816
+INFO 2024-05-18 12:41:43,502 basehttp 11116 6648 "GET /shop/about HTTP/1.1" 200 646
+INFO 2024-05-18 12:41:43,618 basehttp 11116 6648 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 200 134920
+INFO 2024-05-18 12:42:37,802 basehttp 11116 6648 "GET /shop/about HTTP/1.1" 200 660
+INFO 2024-05-18 12:42:52,245 basehttp 11116 6648 "GET /shop/about HTTP/1.1" 200 658
+INFO 2024-05-18 12:43:13,988 basehttp 11116 6648 "GET /shop/about HTTP/1.1" 200 657
+INFO 2024-05-18 12:43:19,514 basehttp 11116 6648 "GET /shop/about HTTP/1.1" 200 657
+INFO 2024-05-18 12:43:21,492 basehttp 11116 6648 "GET /shop/about HTTP/1.1" 200 658
+INFO 2024-05-18 12:44:11,009 basehttp 11116 6648 "GET /shop/about HTTP/1.1" 200 673
+INFO 2024-05-18 12:44:11,040 basehttp 11116 6648 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 304 0
+INFO 2024-05-18 12:44:21,816 basehttp 11116 6648 "GET /shop/about HTTP/1.1" 200 678
+INFO 2024-05-18 12:44:22,638 basehttp 11116 6648 "GET /shop/about HTTP/1.1" 200 678
+INFO 2024-05-18 12:44:34,467 basehttp 11116 6648 "GET /shop/about HTTP/1.1" 200 669
+INFO 2024-05-18 12:44:49,051 basehttp 11116 6648 "GET /shop/about HTTP/1.1" 200 675
+INFO 2024-05-18 12:44:49,936 basehttp 11116 6648 "GET /shop/about HTTP/1.1" 200 675
+INFO 2024-05-18 12:45:22,810 basehttp 11116 6648 "GET /shop/about HTTP/1.1" 200 677
+INFO 2024-05-18 12:45:29,078 basehttp 11116 6648 "GET /shop/about HTTP/1.1" 200 679
+INFO 2024-05-18 12:46:45,798 basehttp 11116 6648 "GET /shop/about HTTP/1.1" 200 698
+INFO 2024-05-18 12:46:45,836 basehttp 11116 6648 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 304 0
+INFO 2024-05-18 12:47:06,491 basehttp 11116 6648 "GET /shop/about HTTP/1.1" 200 695
+INFO 2024-05-18 12:47:23,617 basehttp 11116 6648 "GET /shop/about HTTP/1.1" 200 695
+INFO 2024-05-18 12:49:17,850 autoreload 10192 11128 Watching for file changes with StatReloader
+INFO 2024-05-18 12:50:18,962 basehttp 10192 13448 "GET / HTTP/1.1" 200 70
+WARNING 2024-05-18 12:50:19,294 log 10192 13448 Not Found: /favicon.ico
+WARNING 2024-05-18 12:50:19,294 basehttp 10192 13448 "GET /favicon.ico HTTP/1.1" 404 2763
+INFO 2024-05-18 12:50:32,902 basehttp 10192 13448 "GET /shop HTTP/1.1" 301 0
+INFO 2024-05-18 12:50:33,018 basehttp 10192 11900 "GET /shop/ HTTP/1.1" 200 277
+INFO 2024-05-18 12:50:38,200 basehttp 10192 11900 "GET /shop/about HTTP/1.1" 200 660
+INFO 2024-05-18 12:50:38,363 basehttp 10192 11900 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 200 134920
+INFO 2024-05-18 12:55:41,580 basehttp 10192 7388 "GET /shop/about HTTP/1.1" 200 890
+INFO 2024-05-18 12:55:41,605 basehttp 10192 7388 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 304 0
+INFO 2024-05-18 12:55:42,855 basehttp 10192 7388 "GET /shop/about HTTP/1.1" 200 890
+INFO 2024-05-18 12:55:49,859 basehttp 10192 7388 "GET /shop/ HTTP/1.1" 200 507
+INFO 2024-05-18 12:58:39,212 basehttp 10192 13408 "GET /shop/ HTTP/1.1" 200 349
+WARNING 2024-05-18 12:58:39,265 log 10192 13408 Not Found: /shop/shopapp/static/css/bootstrap.min.css
+WARNING 2024-05-18 12:58:39,265 basehttp 10192 13408 "GET /shop/shopapp/static/css/bootstrap.min.css HTTP/1.1" 404 3081
+INFO 2024-05-18 12:58:41,507 basehttp 10192 13408 "GET /shop/ HTTP/1.1" 200 349
+WARNING 2024-05-18 12:58:41,560 log 10192 13408 Not Found: /shop/shopapp/static/css/bootstrap.min.css
+WARNING 2024-05-18 12:58:41,560 basehttp 10192 13408 "GET /shop/shopapp/static/css/bootstrap.min.css HTTP/1.1" 404 3081
+INFO 2024-05-18 12:58:42,635 basehttp 10192 13408 "GET /shop/about HTTP/1.1" 200 732
+WARNING 2024-05-18 12:58:42,702 log 10192 13408 Not Found: /shop/shopapp/static/css/bootstrap.min.css
+WARNING 2024-05-18 12:58:42,702 basehttp 10192 13408 "GET /shop/shopapp/static/css/bootstrap.min.css HTTP/1.1" 404 3081
+INFO 2024-05-18 12:59:05,199 basehttp 10192 13408 "GET /shop/about HTTP/1.1" 200 724
+WARNING 2024-05-18 12:59:05,299 log 10192 13408 Not Found: /shop/static/css/bootstrap.min.css
+WARNING 2024-05-18 12:59:05,299 basehttp 10192 13408 "GET /shop/static/css/bootstrap.min.css HTTP/1.1" 404 3057
+INFO 2024-05-18 12:59:05,340 basehttp 10192 9608 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 304 0
+INFO 2024-05-18 12:59:06,880 basehttp 10192 13408 "GET /shop/about HTTP/1.1" 200 724
+WARNING 2024-05-18 12:59:06,934 log 10192 9608 Not Found: /shop/static/css/bootstrap.min.css
+WARNING 2024-05-18 12:59:06,934 basehttp 10192 9608 "GET /shop/static/css/bootstrap.min.css HTTP/1.1" 404 3057
+INFO 2024-05-18 12:59:09,509 basehttp 10192 13408 "GET /shop/about HTTP/1.1" 200 724
+WARNING 2024-05-18 12:59:09,571 log 10192 9608 Not Found: /shop/static/css/bootstrap.min.css
+WARNING 2024-05-18 12:59:09,579 basehttp 10192 9608 "GET /shop/static/css/bootstrap.min.css HTTP/1.1" 404 3057
+INFO 2024-05-18 12:59:11,917 basehttp 10192 13408 "GET /shop/ HTTP/1.1" 200 341
+WARNING 2024-05-18 12:59:11,948 log 10192 9608 Not Found: /shop/static/css/bootstrap.min.css
+WARNING 2024-05-18 12:59:11,955 basehttp 10192 9608 "GET /shop/static/css/bootstrap.min.css HTTP/1.1" 404 3057
+INFO 2024-05-18 13:00:25,408 basehttp 10192 13408 "GET /shop/about HTTP/1.1" 200 732
+WARNING 2024-05-18 13:00:25,471 log 10192 9608 Not Found: /shop/static/shopapp/css/bootstrap.min.css
+WARNING 2024-05-18 13:00:25,471 basehttp 10192 9608 "GET /shop/static/shopapp/css/bootstrap.min.css HTTP/1.1" 404 3081
+INFO 2024-05-18 13:00:26,742 basehttp 10192 13408 "GET /shop/about HTTP/1.1" 200 732
+WARNING 2024-05-18 13:00:26,782 log 10192 9608 Not Found: /shop/static/shopapp/css/bootstrap.min.css
+WARNING 2024-05-18 13:00:26,796 basehttp 10192 9608 "GET /shop/static/shopapp/css/bootstrap.min.css HTTP/1.1" 404 3081
+INFO 2024-05-18 13:00:28,549 basehttp 10192 13408 "GET /shop/about HTTP/1.1" 200 732
+WARNING 2024-05-18 13:00:28,621 log 10192 9608 Not Found: /shop/static/shopapp/css/bootstrap.min.css
+WARNING 2024-05-18 13:00:28,621 basehttp 10192 9608 "GET /shop/static/shopapp/css/bootstrap.min.css HTTP/1.1" 404 3081
+INFO 2024-05-18 13:00:30,423 basehttp 10192 13408 "GET /shop/ HTTP/1.1" 200 349
+WARNING 2024-05-18 13:00:30,470 log 10192 9608 Not Found: /shop/static/shopapp/css/bootstrap.min.css
+WARNING 2024-05-18 13:00:30,470 basehttp 10192 9608 "GET /shop/static/shopapp/css/bootstrap.min.css HTTP/1.1" 404 3081
+INFO 2024-05-18 13:00:39,443 basehttp 10192 13408 "GET /shop/ HTTP/1.1" 200 342
+WARNING 2024-05-18 13:00:39,474 log 10192 9608 Not Found: /shop/shopapp/css/bootstrap.min.css
+WARNING 2024-05-18 13:00:39,489 basehttp 10192 9608 "GET /shop/shopapp/css/bootstrap.min.css HTTP/1.1" 404 3060
+INFO 2024-05-18 13:00:41,332 basehttp 10192 13408 "GET /shop/about HTTP/1.1" 200 725
+WARNING 2024-05-18 13:00:41,379 log 10192 9608 Not Found: /shop/shopapp/css/bootstrap.min.css
+WARNING 2024-05-18 13:00:41,379 basehttp 10192 9608 "GET /shop/shopapp/css/bootstrap.min.css HTTP/1.1" 404 3060
+INFO 2024-05-18 13:00:43,508 basehttp 10192 13408 "GET /shop/about HTTP/1.1" 200 725
+WARNING 2024-05-18 13:00:43,539 log 10192 9608 Not Found: /shop/shopapp/css/bootstrap.min.css
+WARNING 2024-05-18 13:00:43,554 basehttp 10192 9608 "GET /shop/shopapp/css/bootstrap.min.css HTTP/1.1" 404 3060
+INFO 2024-05-18 13:01:29,005 basehttp 10192 13408 "GET /shop/about HTTP/1.1" 200 735
+INFO 2024-05-18 13:01:29,043 basehttp 10192 9608 "GET /static/shopapp/css/bootstrap.min.css HTTP/1.1" 200 144877
+INFO 2024-05-18 13:01:33,048 basehttp 10192 9608 "GET /shop/ HTTP/1.1" 200 352
+INFO 2024-05-18 13:01:37,548 basehttp 10192 9608 "GET /shop/about HTTP/1.1" 200 735
+INFO 2024-05-18 13:01:49,266 basehttp 10192 9608 "GET /shop/about HTTP/1.1" 200 735
+INFO 2024-05-18 13:02:22,865 basehttp 10192 9608 "GET /shop/about HTTP/1.1" 200 731
+INFO 2024-05-18 13:02:22,955 basehttp 10192 9608 "GET /static/shopapp/css/bootstrap.css HTTP/1.1" 200 178152
+INFO 2024-05-18 13:02:26,393 basehttp 10192 9608 "GET /shop/ HTTP/1.1" 200 348
+INFO 2024-05-18 13:03:34,849 basehttp 10192 9608 "GET /shop/ HTTP/1.1" 200 474
+INFO 2024-05-18 13:03:40,067 basehttp 10192 9608 "GET /shop/about HTTP/1.1" 200 857
+INFO 2024-05-18 13:03:40,134 basehttp 10192 9608 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 304 0
+INFO 2024-05-18 13:04:34,736 basehttp 10192 9608 "GET /shop/about HTTP/1.1" 200 972
+INFO 2024-05-18 13:04:37,922 basehttp 10192 9608 "GET /shop/about HTTP/1.1" 200 972
+INFO 2024-05-18 13:04:40,159 basehttp 10192 9608 "GET /shop/ HTTP/1.1" 200 589
+INFO 2024-05-18 13:06:12,481 basehttp 10192 13620 "GET /shop/ HTTP/1.1" 200 589
+INFO 2024-05-18 13:06:12,650 basehttp 10192 13620 "GET /static/shopapp/css/bootstrap.css HTTP/1.1" 200 178152
+WARNING 2024-05-18 13:06:12,782 log 10192 13620 Not Found: /favicon.ico
+WARNING 2024-05-18 13:06:12,782 basehttp 10192 13620 "GET /favicon.ico HTTP/1.1" 404 2763
+INFO 2024-05-18 13:06:16,073 basehttp 10192 13620 "GET /shop/about HTTP/1.1" 200 972
+INFO 2024-05-18 13:06:16,114 basehttp 10192 13620 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 304 0
+INFO 2024-05-18 13:07:09,410 basehttp 10192 14504 "GET /shop/about HTTP/1.1" 200 972
+INFO 2024-05-18 13:07:31,606 basehttp 10192 14504 "GET /shop/about HTTP/1.1" 200 972
+INFO 2024-05-18 13:12:28,332 basehttp 10192 14504 - Broken pipe from ('192.168.1.48', 47694)
+INFO 2024-05-18 13:12:28,332 basehttp 10192 8240 - Broken pipe from ('192.168.1.48', 47702)
+INFO 2024-05-18 13:13:42,635 basehttp 10192 4636 "GET /shop/ HTTP/1.1" 200 934
+WARNING 2024-05-18 13:13:46,129 log 10192 4636 Not Found: /main/
+WARNING 2024-05-18 13:13:46,129 basehttp 10192 4636 "GET /main/ HTTP/1.1" 404 2741
+INFO 2024-05-18 13:13:55,757 basehttp 10192 4636 "GET /shop/about HTTP/1.1" 200 1317
+INFO 2024-05-18 13:13:55,821 basehttp 10192 4636 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 304 0
+INFO 2024-05-18 13:22:58,925 basehttp 10192 4528 "GET /shop/about HTTP/1.1" 200 1564
+INFO 2024-05-18 13:22:58,999 basehttp 10192 4528 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 304 0
+ERROR 2024-05-18 13:23:28,819 log 10192 4528 Internal Server Error: /shop/about
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 23, in about
+    return render(request, "shopapp/about.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-05-18 13:23:28,833 basehttp 10192 4528 "GET /shop/about HTTP/1.1" 500 135851
+ERROR 2024-05-18 13:24:12,969 log 10192 4528 Internal Server Error: /shop/about
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 23, in about
+    return render(request, "shopapp/about.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-05-18 13:24:13,184 basehttp 10192 4528 "GET /shop/about HTTP/1.1" 500 135851
+INFO 2024-05-18 13:25:07,863 autoreload 10192 11128 C:\Users\A9219\PycharmProjects\Django\seminar_proj\seminar_proj\settings.py changed, reloading.
+INFO 2024-05-18 13:25:09,275 autoreload 9436 12156 Watching for file changes with StatReloader
+INFO 2024-05-18 13:25:10,192 basehttp 9436 15004 "GET /shop/about HTTP/1.1" 200 1564
+INFO 2024-05-18 13:25:49,001 basehttp 9436 15004 "GET /shop/about HTTP/1.1" 200 1564
+INFO 2024-05-18 13:26:19,579 basehttp 9436 15004 "GET /shop/about HTTP/1.1" 200 1564
+ERROR 2024-05-18 13:26:25,630 log 9436 15004 Internal Server Error: /shop/
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: shopapp/base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 13, in index
+    return render(request, 'shopapp/index.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: shopapp/base.html
+ERROR 2024-05-18 13:26:25,646 basehttp 9436 15004 "GET /shop/ HTTP/1.1" 500 135278
+INFO 2024-05-18 13:26:41,042 basehttp 9436 15004 "GET /shop/ HTTP/1.1" 200 934
+INFO 2024-05-18 13:26:43,729 basehttp 9436 15004 "GET /shop/about HTTP/1.1" 200 1564
+INFO 2024-05-18 13:26:49,084 basehttp 9436 15004 "GET /shop/about HTTP/1.1" 200 1564
+INFO 2024-05-18 13:27:18,173 basehttp 9436 15004 "GET /shop/about HTTP/1.1" 200 1564
+INFO 2024-05-18 13:27:24,240 basehttp 9436 15004 "GET /shop/about HTTP/1.1" 200 1561
+WARNING 2024-05-18 13:27:24,295 log 9436 15004 Not Found: /shop/static/shopapp/css/bootstrap.css
+WARNING 2024-05-18 13:27:24,295 basehttp 9436 15004 "GET /shop/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3069
+INFO 2024-05-18 13:27:30,619 basehttp 9436 15004 "GET /shop/about HTTP/1.1" 200 1561
+WARNING 2024-05-18 13:27:30,951 log 9436 15004 Not Found: /shop/static/shopapp/css/bootstrap.css
+WARNING 2024-05-18 13:27:30,953 basehttp 9436 15004 "GET /shop/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3069
+INFO 2024-05-18 13:28:08,190 basehttp 9436 15004 "GET /shop/about HTTP/1.1" 200 1554
+WARNING 2024-05-18 13:28:08,244 log 9436 15004 Not Found: /shop/shopapp/css/bootstrap.css
+WARNING 2024-05-18 13:28:08,259 basehttp 9436 15004 "GET /shop/shopapp/css/bootstrap.css HTTP/1.1" 404 3048
+INFO 2024-05-18 13:28:09,446 basehttp 9436 15004 "GET /shop/about HTTP/1.1" 200 1554
+WARNING 2024-05-18 13:28:09,493 log 9436 5168 Not Found: /shop/shopapp/css/bootstrap.css
+WARNING 2024-05-18 13:28:09,509 basehttp 9436 5168 "GET /shop/shopapp/css/bootstrap.css HTTP/1.1" 404 3048
+INFO 2024-05-18 13:28:13,686 basehttp 9436 15004 "GET /shop/about HTTP/1.1" 200 1554
+WARNING 2024-05-18 13:28:13,733 log 9436 5168 Not Found: /shop/shopapp/css/bootstrap.css
+WARNING 2024-05-18 13:28:13,733 basehttp 9436 5168 "GET /shop/shopapp/css/bootstrap.css HTTP/1.1" 404 3048
+INFO 2024-05-18 13:28:14,250 basehttp 9436 15004 "GET /shop/about HTTP/1.1" 200 1554
+WARNING 2024-05-18 13:28:14,288 log 9436 5168 Not Found: /shop/shopapp/css/bootstrap.css
+WARNING 2024-05-18 13:28:14,304 basehttp 9436 5168 "GET /shop/shopapp/css/bootstrap.css HTTP/1.1" 404 3048
+INFO 2024-05-18 13:28:14,725 basehttp 9436 15004 "GET /shop/about HTTP/1.1" 200 1554
+WARNING 2024-05-18 13:28:14,772 log 9436 5168 Not Found: /shop/shopapp/css/bootstrap.css
+WARNING 2024-05-18 13:28:14,778 basehttp 9436 5168 "GET /shop/shopapp/css/bootstrap.css HTTP/1.1" 404 3048
+INFO 2024-05-18 13:28:14,979 basehttp 9436 15004 "GET /shop/about HTTP/1.1" 200 1554
+WARNING 2024-05-18 13:28:15,026 log 9436 5168 Not Found: /shop/shopapp/css/bootstrap.css
+WARNING 2024-05-18 13:28:15,041 basehttp 9436 5168 "GET /shop/shopapp/css/bootstrap.css HTTP/1.1" 404 3048
+INFO 2024-05-18 13:28:15,179 basehttp 9436 15004 "GET /shop/about HTTP/1.1" 200 1554
+WARNING 2024-05-18 13:28:15,226 log 9436 5168 Not Found: /shop/shopapp/css/bootstrap.css
+WARNING 2024-05-18 13:28:15,226 basehttp 9436 5168 "GET /shop/shopapp/css/bootstrap.css HTTP/1.1" 404 3048
+INFO 2024-05-18 13:28:15,358 basehttp 9436 15004 "GET /shop/about HTTP/1.1" 200 1554
+WARNING 2024-05-18 13:28:15,411 log 9436 5168 Not Found: /shop/shopapp/css/bootstrap.css
+WARNING 2024-05-18 13:28:15,411 basehttp 9436 5168 "GET /shop/shopapp/css/bootstrap.css HTTP/1.1" 404 3048
+INFO 2024-05-18 13:28:18,189 basehttp 9436 15004 "GET /shop/ HTTP/1.1" 200 924
+WARNING 2024-05-18 13:28:18,236 log 9436 5168 Not Found: /shop/shopapp/css/bootstrap.css
+WARNING 2024-05-18 13:28:18,236 basehttp 9436 5168 "GET /shop/shopapp/css/bootstrap.css HTTP/1.1" 404 3048
+INFO 2024-05-18 13:28:28,429 basehttp 9436 15004 "GET /shop/ HTTP/1.1" 200 934
+INFO 2024-05-18 13:28:29,917 basehttp 9436 15004 "GET /shop/about HTTP/1.1" 200 1564
+WARNING 2024-05-18 13:36:44,906 log 9436 2748 Not Found: /favicon.ico
+WARNING 2024-05-18 13:36:44,906 basehttp 9436 2748 "GET /favicon.ico HTTP/1.1" 404 2763
+INFO 2024-05-18 13:46:58,264 basehttp 9436 13404 "GET /shop HTTP/1.1" 301 0
+INFO 2024-05-18 13:46:58,296 basehttp 9436 9020 "GET /shop/ HTTP/1.1" 200 934
+INFO 2024-05-18 13:46:58,559 basehttp 9436 9020 "GET /static/shopapp/css/bootstrap.css HTTP/1.1" 200 178152
+WARNING 2024-05-18 13:46:58,697 log 9436 9020 Not Found: /favicon.ico
+WARNING 2024-05-18 13:46:58,712 basehttp 9436 9020 "GET /favicon.ico HTTP/1.1" 404 2763
+INFO 2024-05-18 13:47:02,841 basehttp 9436 9020 "GET /shop/about HTTP/1.1" 200 1564
+INFO 2024-05-18 13:47:02,922 basehttp 9436 9020 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 200 134920
+INFO 2024-05-18 13:47:09,731 basehttp 9436 9020 "GET /shop/about HTTP/1.1" 200 1564
+INFO 2024-05-18 14:16:47,054 basehttp 9436 1640 "GET /shop/about HTTP/1.1" 200 1578
+INFO 2024-05-18 14:16:47,054 basehttp 9436 1640 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 304 0
+WARNING 2024-05-18 14:16:49,373 log 9436 1640 Not Found: /shopapp/imdex.html/
+WARNING 2024-05-18 14:16:49,373 basehttp 9436 1640 "GET /shopapp/imdex.html/ HTTP/1.1" 404 2783
+WARNING 2024-05-18 14:16:53,500 log 9436 1640 Not Found: /data/
+WARNING 2024-05-18 14:16:53,500 basehttp 9436 1640 "GET /data/ HTTP/1.1" 404 2741
+WARNING 2024-05-18 14:16:58,347 log 9436 1640 Not Found: /shopapp/imdex.html/
+WARNING 2024-05-18 14:16:58,347 basehttp 9436 1640 "GET /shopapp/imdex.html/ HTTP/1.1" 404 2783
+WARNING 2024-05-18 14:17:07,108 log 9436 1640 Not Found: /shopapp/imdex.html/
+WARNING 2024-05-18 14:17:07,108 basehttp 9436 1640 "GET /shopapp/imdex.html/ HTTP/1.1" 404 2783
+WARNING 2024-05-18 14:17:09,287 log 9436 1640 Not Found: /shopapp/imdex.html/
+WARNING 2024-05-18 14:17:09,287 basehttp 9436 1640 "GET /shopapp/imdex.html/ HTTP/1.1" 404 2783
+WARNING 2024-05-18 14:17:13,525 log 9436 1640 Not Found: /shopapp/imdex.html/
+WARNING 2024-05-18 14:17:13,525 basehttp 9436 1640 "GET /shopapp/imdex.html/ HTTP/1.1" 404 2783
+WARNING 2024-05-18 14:17:30,619 log 9436 1640 Not Found: /shopapp/index.html/
+WARNING 2024-05-18 14:17:30,619 basehttp 9436 1640 "GET /shopapp/index.html/ HTTP/1.1" 404 2783
+WARNING 2024-05-18 14:18:18,731 log 9436 1640 Not Found: /shopapp/index.html/
+WARNING 2024-05-18 14:18:18,731 basehttp 9436 1640 "GET /shopapp/index.html/ HTTP/1.1" 404 2783
+INFO 2024-05-18 14:18:25,143 basehttp 9436 1640 "GET /shop/about HTTP/1.1" 200 1582
+WARNING 2024-05-18 14:18:27,735 log 9436 1640 Not Found: /shop/shop/shopapp/index.html/
+WARNING 2024-05-18 14:18:27,735 basehttp 9436 1640 "GET /shop/shop/shopapp/index.html/ HTTP/1.1" 404 3045
+INFO 2024-05-18 14:18:44,379 basehttp 9436 1640 "GET /shop/about HTTP/1.1" 200 1577
+WARNING 2024-05-18 14:18:46,037 log 9436 1640 Not Found: /shop/shopapp/index.html/
+WARNING 2024-05-18 14:18:46,037 basehttp 9436 1640 "GET /shop/shopapp/index.html/ HTTP/1.1" 404 3030
+INFO 2024-05-18 14:19:13,267 basehttp 9436 1640 "GET /shop/about HTTP/1.1" 200 1587
+WARNING 2024-05-18 14:19:19,145 log 9436 1640 Not Found: /shop/shopapp/templates/index.html/
+WARNING 2024-05-18 14:19:19,145 basehttp 9436 1640 "GET /shop/shopapp/templates/index.html/ HTTP/1.1" 404 3060
+WARNING 2024-05-18 14:19:47,530 log 9436 1640 Not Found: /shop/shopapp/templates/index.html/
+WARNING 2024-05-18 14:19:47,578 basehttp 9436 1640 "GET /shop/shopapp/templates/index.html/ HTTP/1.1" 404 3060
+INFO 2024-05-18 14:19:51,166 basehttp 9436 1640 "GET /shop/about HTTP/1.1" 200 1570
+WARNING 2024-05-18 14:19:52,584 log 9436 1640 Not Found: /index.html/
+WARNING 2024-05-18 14:19:52,584 basehttp 9436 1640 "GET /index.html/ HTTP/1.1" 404 2759
+WARNING 2024-05-18 14:20:07,897 log 9436 1640 Not Found: /shopapp/index.html/
+WARNING 2024-05-18 14:20:07,897 basehttp 9436 1640 "GET /shopapp/index.html/ HTTP/1.1" 404 2783
+INFO 2024-05-18 14:20:40,637 basehttp 9436 1640 "GET /shop/about HTTP/1.1" 200 1570
+INFO 2024-05-18 14:20:41,986 basehttp 9436 1640 "GET /shop/about HTTP/1.1" 200 1570
+WARNING 2024-05-18 14:20:45,681 log 9436 1640 Not Found: /shop/.index.html/
+WARNING 2024-05-18 14:20:45,681 basehttp 9436 1640 "GET /shop/.index.html/ HTTP/1.1" 404 3009
+INFO 2024-05-18 14:21:09,667 basehttp 9436 1640 "GET /shop/ HTTP/1.1" 200 940
+WARNING 2024-05-18 14:21:12,140 log 9436 1640 Not Found: /shop/.index.html/
+WARNING 2024-05-18 14:21:12,140 basehttp 9436 1640 "GET /shop/.index.html/ HTTP/1.1" 404 3009
+INFO 2024-05-18 14:21:14,339 basehttp 9436 1640 "GET /shop/about HTTP/1.1" 200 1570
+WARNING 2024-05-18 14:21:16,148 log 9436 1640 Not Found: /shop/.index.html/
+WARNING 2024-05-18 14:21:16,148 basehttp 9436 1640 "GET /shop/.index.html/ HTTP/1.1" 404 3009
+INFO 2024-05-18 14:21:55,509 basehttp 9436 1640 "GET /shop/about HTTP/1.1" 200 1578
+WARNING 2024-05-18 14:21:57,277 log 9436 1640 Not Found: /shop/.shopapp/index.html/
+WARNING 2024-05-18 14:21:57,277 basehttp 9436 1640 "GET /shop/.shopapp/index.html/ HTTP/1.1" 404 3033
+INFO 2024-05-18 14:22:28,801 basehttp 9436 1640 "GET /shop/about HTTP/1.1" 200 1595
+WARNING 2024-05-18 14:22:30,843 log 9436 1640 Not Found: /shop/shopapp/templates/shopapp/index.html/
+WARNING 2024-05-18 14:22:30,843 basehttp 9436 1640 "GET /shop/shopapp/templates/shopapp/index.html/ HTTP/1.1" 404 3084
+WARNING 2024-05-18 14:23:02,253 log 9436 1640 Not Found: /shop/index.html/
+WARNING 2024-05-18 14:23:02,270 basehttp 9436 1640 "GET /shop/index.html/ HTTP/1.1" 404 3006
+WARNING 2024-05-18 14:23:13,440 log 9436 1640 Not Found: /shop/index/
+WARNING 2024-05-18 14:23:13,440 basehttp 9436 1640 "GET /shop/index/ HTTP/1.1" 404 2991
+WARNING 2024-05-18 14:23:36,560 log 9436 1640 Not Found: /shop/about/
+WARNING 2024-05-18 14:23:36,560 basehttp 9436 1640 "GET /shop/about/ HTTP/1.1" 404 2991
+INFO 2024-05-18 14:24:03,176 basehttp 9436 1640 "GET /shop/about HTTP/1.1" 200 1590
+WARNING 2024-05-18 14:24:07,170 log 9436 1640 Not Found: /shop/shopapp/templates/shopapp/index/
+WARNING 2024-05-18 14:24:07,170 basehttp 9436 1640 "GET /shop/shopapp/templates/shopapp/index/ HTTP/1.1" 404 3069
+WARNING 2024-05-18 14:24:15,321 log 9436 1640 Not Found: /shop/shopapp/templates/shopapp/index/
+WARNING 2024-05-18 14:24:15,351 basehttp 9436 1640 "GET /shop/shopapp/templates/shopapp/index/ HTTP/1.1" 404 3069
+INFO 2024-05-18 14:24:19,007 basehttp 9436 1640 "GET /shop/about HTTP/1.1" 200 1569
+WARNING 2024-05-18 14:24:20,303 log 9436 1640 Not Found: /shop/shop/index/
+WARNING 2024-05-18 14:24:20,303 basehttp 9436 1640 "GET /shop/shop/index/ HTTP/1.1" 404 3006
+INFO 2024-05-18 14:24:42,385 basehttp 9436 1640 "GET /shop/about HTTP/1.1" 200 1572
+WARNING 2024-05-18 14:24:44,561 log 9436 1640 Not Found: /shop/shopapp/index/
+WARNING 2024-05-18 14:24:44,561 basehttp 9436 1640 "GET /shop/shopapp/index/ HTTP/1.1" 404 3015
+INFO 2024-05-18 14:25:55,223 autoreload 9436 12156 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\urls.py changed, reloading.
+INFO 2024-05-18 14:25:56,234 autoreload 9736 14312 Watching for file changes with StatReloader
+WARNING 2024-05-18 14:26:00,157 log 9736 13368 Not Found: /shop/shopapp/index/
+WARNING 2024-05-18 14:26:00,157 basehttp 9736 13368 "GET /shop/shopapp/index/ HTTP/1.1" 404 3186
+INFO 2024-05-18 14:26:15,360 basehttp 9736 13368 "GET /shop/about HTTP/1.1" 200 1565
+WARNING 2024-05-18 14:26:16,784 log 9736 13368 Not Found: /index/
+WARNING 2024-05-18 14:26:16,784 basehttp 9736 13368 "GET /index/ HTTP/1.1" 404 2744
+INFO 2024-05-18 14:33:14,365 basehttp 9736 13272 "GET /shop/about HTTP/1.1" 200 1569
+INFO 2024-05-18 14:33:14,498 basehttp 9736 13272 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 304 0
+INFO 2024-05-18 14:33:16,050 basehttp 9736 13272 "GET /shop/index HTTP/1.1" 200 939
+INFO 2024-05-18 14:33:29,263 autoreload 9736 14312 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\urls.py changed, reloading.
+INFO 2024-05-18 14:33:30,270 autoreload 1712 13816 Watching for file changes with StatReloader
+WARNING 2024-05-18 14:33:30,887 log 1712 12260 Not Found: /shop/index
+WARNING 2024-05-18 14:33:30,887 basehttp 1712 12260 "GET /shop/index HTTP/1.1" 404 2988
+WARNING 2024-05-18 14:33:39,210 log 1712 12260 Not Found: /shop/index
+WARNING 2024-05-18 14:33:39,210 basehttp 1712 12260 "GET /shop/index HTTP/1.1" 404 2988
+WARNING 2024-05-18 14:33:45,698 log 1712 12260 Not Found: /shop/index
+WARNING 2024-05-18 14:33:45,698 basehttp 1712 12260 "GET /shop/index HTTP/1.1" 404 2988
+INFO 2024-05-18 14:33:46,656 autoreload 1712 13816 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\urls.py changed, reloading.
+INFO 2024-05-18 14:33:47,463 autoreload 11376 5644 Watching for file changes with StatReloader
+INFO 2024-05-18 14:33:50,196 basehttp 11376 14964 "GET /shop/index HTTP/1.1" 200 939
+INFO 2024-05-18 14:33:51,932 basehttp 11376 14964 "GET /shop/about HTTP/1.1" 200 1569
+INFO 2024-05-18 14:33:53,456 basehttp 11376 14964 "GET /shop/index HTTP/1.1" 200 939
+INFO 2024-05-18 14:33:55,599 basehttp 11376 14964 "GET /shop/about HTTP/1.1" 200 1569
+INFO 2024-05-18 14:34:33,896 basehttp 11376 14964 "GET /shop/index HTTP/1.1" 200 939
+INFO 2024-05-18 14:34:36,042 basehttp 11376 14964 "GET /shop/about HTTP/1.1" 200 1569
+INFO 2024-05-18 14:34:39,321 basehttp 11376 14964 "GET /shop/index HTTP/1.1" 200 939
+INFO 2024-05-18 14:34:40,205 basehttp 11376 14964 "GET /shop/index HTTP/1.1" 200 939
+INFO 2024-05-18 14:34:41,773 basehttp 11376 14964 "GET /shop/about HTTP/1.1" 200 1569
+INFO 2024-05-18 14:35:25,889 basehttp 11376 14964 "GET /shop/about HTTP/1.1" 200 1600
+INFO 2024-05-18 14:38:00,904 basehttp 11376 9956 "GET /shop/about HTTP/1.1" 200 1625
+INFO 2024-05-18 14:38:01,115 basehttp 11376 9956 - Broken pipe from ('127.0.0.1', 59516)
+INFO 2024-05-18 14:38:02,995 basehttp 11376 14524 "GET /shop/index HTTP/1.1" 200 995
+INFO 2024-05-18 14:38:28,518 basehttp 11376 14524 "GET /shop/index HTTP/1.1" 200 995
+INFO 2024-05-18 15:07:19,363 basehttp 11376 5748 "GET / HTTP/1.1" 200 70
+INFO 2024-05-18 15:07:25,680 basehttp 11376 5748 "GET /shop/ HTTP/1.1" 200 995
+INFO 2024-05-18 15:07:29,005 basehttp 11376 5748 "GET /shop/about HTTP/1.1" 200 1625
+INFO 2024-05-18 15:07:29,058 basehttp 11376 5748 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 304 0
+INFO 2024-05-18 15:07:31,156 basehttp 11376 5748 "GET /shop/index HTTP/1.1" 200 995
+INFO 2024-05-18 15:07:38,770 basehttp 11376 5748 "GET /shop/index HTTP/1.1" 200 995
+INFO 2024-05-18 15:08:38,405 basehttp 11376 5748 "GET /shop/index HTTP/1.1" 200 995
+INFO 2024-05-18 15:08:40,000 basehttp 11376 5748 "GET /shop/about HTTP/1.1" 200 1625
+INFO 2024-05-18 15:08:41,430 basehttp 11376 5748 "GET /shop/index HTTP/1.1" 200 995
+INFO 2024-05-18 15:23:58,305 autoreload 13972 14840 Watching for file changes with StatReloader
+WARNING 2024-05-18 15:24:07,072 log 13972 5252 Not Found: /game
+WARNING 2024-05-18 15:24:07,072 basehttp 13972 5252 "GET /game HTTP/1.1" 404 2738
+WARNING 2024-05-18 15:24:48,229 log 13972 5252 Not Found: /game/orel_reshka/'
+WARNING 2024-05-18 15:24:48,229 basehttp 13972 5252 "GET /game/orel_reshka/' HTTP/1.1" 404 3412
+INFO 2024-05-18 15:24:53,257 basehttp 13972 5252 "GET /game/orel_reshka/ HTTP/1.1" 200 11
+INFO 2024-05-18 15:25:00,230 basehttp 13972 5252 "GET /game/orel_reshka/ HTTP/1.1" 200 11
+INFO 2024-05-18 15:25:02,351 basehttp 13972 5252 "GET /game/orel_reshka/ HTTP/1.1" 200 11
+INFO 2024-05-18 15:25:03,231 basehttp 13972 5252 "GET /game/orel_reshka/ HTTP/1.1" 200 11
+INFO 2024-05-18 15:25:04,441 basehttp 13972 5252 "GET /game/orel_reshka/ HTTP/1.1" 200 11
+INFO 2024-05-18 15:25:05,043 basehttp 13972 5252 "GET /game/orel_reshka/ HTTP/1.1" 200 11
+INFO 2024-05-18 15:26:17,816 autoreload 13972 14840 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-18 15:26:18,886 autoreload 6476 1080 Watching for file changes with StatReloader
+INFO 2024-05-18 15:35:39,304 autoreload 6476 1080 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-18 15:35:40,375 autoreload 5284 13204 Watching for file changes with StatReloader
+INFO 2024-05-18 15:36:26,926 basehttp 5284 14696 - Broken pipe from ('127.0.0.1', 60455)
+INFO 2024-05-18 15:36:29,130 basehttp 5284 13104 "GET /shop/about HTTP/1.1" 200 1625
+INFO 2024-05-18 15:36:29,197 basehttp 5284 13104 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 304 0
+INFO 2024-05-18 15:36:38,418 basehttp 5284 13104 "GET /shop/index HTTP/1.1" 200 995
+INFO 2024-05-18 15:36:40,172 basehttp 5284 13104 "GET /shop/about HTTP/1.1" 200 1625
+INFO 2024-05-18 23:34:10,506 autoreload 5284 13204 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-18 23:34:12,375 autoreload 15208 5624 Watching for file changes with StatReloader
+INFO 2024-05-18 23:39:12,433 autoreload 15208 5624 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-18 23:39:13,894 autoreload 13588 9616 Watching for file changes with StatReloader
+INFO 2024-05-18 23:41:00,603 autoreload 13588 9616 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-18 23:41:01,878 autoreload 7080 7044 Watching for file changes with StatReloader
+INFO 2024-05-18 23:41:52,897 autoreload 7080 7044 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-18 23:41:54,002 autoreload 5128 8244 Watching for file changes with StatReloader
+INFO 2024-05-18 23:42:07,448 autoreload 5128 8244 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-18 23:42:08,627 autoreload 9260 3044 Watching for file changes with StatReloader
+INFO 2024-05-18 23:43:25,532 autoreload 9260 3044 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-18 23:43:26,566 autoreload 9832 14680 Watching for file changes with StatReloader
+INFO 2024-05-18 23:45:32,092 autoreload 9832 14680 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-18 23:45:33,049 autoreload 14824 12320 Watching for file changes with StatReloader
+INFO 2024-05-18 23:46:15,967 basehttp 14824 13748 "GET /game/orel_reshka/ HTTP/1.1" 200 1000
+WARNING 2024-05-18 23:46:16,300 log 14824 13748 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-18 23:46:16,307 basehttp 14824 13748 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3454
+INFO 2024-05-18 23:46:31,064 basehttp 14824 13748 "GET /shop/about HTTP/1.1" 200 1625
+INFO 2024-05-18 23:46:31,142 basehttp 14824 13748 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 304 0
+INFO 2024-05-18 23:46:36,300 basehttp 14824 13748 "GET /shop/index HTTP/1.1" 200 995
+INFO 2024-05-18 23:46:37,633 basehttp 14824 13748 "GET /shop/about HTTP/1.1" 200 1625
+INFO 2024-05-18 23:46:41,199 basehttp 14824 13748 "GET /shop/index HTTP/1.1" 200 995
+INFO 2024-05-18 23:47:56,642 basehttp 14824 13748 "GET /shop/index HTTP/1.1" 200 995
+INFO 2024-05-18 23:47:58,471 basehttp 14824 13748 "GET /shop/about HTTP/1.1" 200 1625
+WARNING 2024-05-18 23:48:08,437 log 14824 13748 Not Found: /game/
+WARNING 2024-05-18 23:48:08,447 basehttp 14824 13748 "GET /game/ HTTP/1.1" 404 3358
+INFO 2024-05-18 23:48:24,624 basehttp 14824 13748 "GET /game/orel_reshka/ HTTP/1.1" 200 1000
+WARNING 2024-05-18 23:48:24,646 log 14824 13748 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-18 23:48:24,662 basehttp 14824 13748 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3454
+INFO 2024-05-18 23:49:10,558 autoreload 14824 12320 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-18 23:49:12,121 autoreload 13836 12640 Watching for file changes with StatReloader
+INFO 2024-05-18 23:49:13,074 basehttp 13836 12792 "GET /game/orel_reshka/ HTTP/1.1" 200 957
+WARNING 2024-05-18 23:49:13,142 log 13836 12792 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-18 23:49:13,149 basehttp 13836 12792 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3454
+INFO 2024-05-18 23:49:19,321 basehttp 13836 12792 "GET /game/orel_reshka/ HTTP/1.1" 200 957
+WARNING 2024-05-18 23:49:19,358 log 13836 12792 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-18 23:49:19,389 basehttp 13836 12792 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3454
+INFO 2024-05-18 23:49:23,509 basehttp 13836 12792 "GET /game/orel_reshka/ HTTP/1.1" 200 957
+WARNING 2024-05-18 23:49:23,531 log 13836 12792 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-18 23:49:23,531 basehttp 13836 12792 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3454
+INFO 2024-05-18 23:49:30,727 basehttp 13836 12792 "GET /game/orel_reshka/ HTTP/1.1" 200 957
+WARNING 2024-05-18 23:49:30,742 log 13836 12792 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-18 23:49:30,763 basehttp 13836 12792 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3454
+INFO 2024-05-18 23:50:51,832 autoreload 13836 12640 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-18 23:50:52,845 autoreload 13404 9172 Watching for file changes with StatReloader
+INFO 2024-05-18 23:50:54,861 basehttp 13404 10836 "GET /game/orel_reshka/ HTTP/1.1" 200 1883
+WARNING 2024-05-18 23:50:54,899 log 13404 10836 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-18 23:50:54,911 basehttp 13404 10836 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3454
+INFO 2024-05-18 23:51:56,968 autoreload 13404 9172 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-18 23:51:58,051 autoreload 11296 13356 Watching for file changes with StatReloader
+ERROR 2024-05-18 23:52:00,109 log 11296 6096 Internal Server Error: /game/orel_reshka/
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py", line 24, in orel_reshka
+    return render(request, 'newapp/index.html', *context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 57, in render
+    context = make_context(
+              ^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\context.py", line 286, in make_context
+    raise TypeError(
+TypeError: context must be a dict rather than str.
+ERROR 2024-05-18 23:52:00,122 basehttp 11296 6096 "GET /game/orel_reshka/ HTTP/1.1" 500 88349
+INFO 2024-05-18 23:52:09,565 autoreload 11296 13356 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-18 23:52:10,898 autoreload 2232 2384 Watching for file changes with StatReloader
+ERROR 2024-05-18 23:52:13,053 log 2232 13192 Internal Server Error: /game/orel_reshka/
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py", line 24, in orel_reshka
+    return render(request, 'newapp/index.html', **context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: render() got an unexpected keyword argument 'name'
+ERROR 2024-05-18 23:52:13,069 basehttp 2232 13192 "GET /game/orel_reshka/ HTTP/1.1" 500 71590
+ERROR 2024-05-18 23:52:21,869 log 2232 13192 Internal Server Error: /game/orel_reshka/
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py", line 24, in orel_reshka
+    return render(request, 'newapp/index.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: render() got an unexpected keyword argument 'name'
+ERROR 2024-05-18 23:52:21,900 basehttp 2232 13192 "GET /game/orel_reshka/ HTTP/1.1" 500 71586
+INFO 2024-05-18 23:52:22,263 autoreload 2232 2384 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-18 23:52:23,283 autoreload 10500 12132 Watching for file changes with StatReloader
+INFO 2024-05-18 23:52:24,113 basehttp 10500 5980 "GET /game/orel_reshka/ HTTP/1.1" 200 1883
+WARNING 2024-05-18 23:52:24,143 log 10500 5980 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-18 23:52:24,276 basehttp 10500 5980 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3454
+INFO 2024-05-18 23:53:31,122 autoreload 10500 12132 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-18 23:53:32,261 autoreload 9828 14356 Watching for file changes with StatReloader
+INFO 2024-05-18 23:53:33,175 basehttp 9828 3984 "GET /game/orel_reshka/ HTTP/1.1" 200 1866
+WARNING 2024-05-18 23:53:33,206 log 9828 3984 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-18 23:53:33,206 basehttp 9828 3984 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3454
+INFO 2024-05-18 23:53:35,887 basehttp 9828 3984 "GET /game/orel_reshka/ HTTP/1.1" 200 1866
+WARNING 2024-05-18 23:53:35,933 log 9828 10800 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-18 23:53:35,937 basehttp 9828 10800 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3454
+WARNING 2024-05-18 23:54:05,245 log 9828 10800 Not Found: /game/static/shopapp/css/bootstrap.css
+INFO 2024-05-18 23:54:05,247 basehttp 9828 3984 "GET /game/orel_reshka/ HTTP/1.1" 200 1866
+WARNING 2024-05-18 23:54:05,250 basehttp 9828 10800 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3454
+INFO 2024-05-18 23:54:05,356 autoreload 9828 14356 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-18 23:54:06,364 autoreload 2876 6612 Watching for file changes with StatReloader
+INFO 2024-05-18 23:54:11,104 basehttp 2876 8864 "GET /game/orel_reshka/ HTTP/1.1" 200 1816
+WARNING 2024-05-18 23:54:11,153 log 2876 8864 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-18 23:54:11,169 basehttp 2876 8864 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3454
+INFO 2024-05-18 23:55:03,417 autoreload 2876 6612 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-18 23:55:04,526 autoreload 9504 6312 Watching for file changes with StatReloader
+INFO 2024-05-18 23:55:06,921 basehttp 9504 4232 "GET /game/orel_reshka/ HTTP/1.1" 200 1196
+WARNING 2024-05-18 23:55:06,968 log 9504 4232 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-18 23:55:06,974 basehttp 9504 4232 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3454
+INFO 2024-05-18 23:55:16,990 autoreload 9504 6312 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-18 23:55:18,374 autoreload 5812 13336 Watching for file changes with StatReloader
+INFO 2024-05-18 23:55:19,372 basehttp 5812 13232 "GET /game/orel_reshka/ HTTP/1.1" 200 1166
+WARNING 2024-05-18 23:55:19,438 log 5812 5784 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-18 23:55:19,444 basehttp 5812 5784 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3454
+INFO 2024-05-18 23:55:38,233 autoreload 5812 13336 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-18 23:55:39,251 autoreload 15252 576 Watching for file changes with StatReloader
+INFO 2024-05-18 23:55:42,483 basehttp 15252 8736 "GET /game/orel_reshka/ HTTP/1.1" 200 1836
+WARNING 2024-05-18 23:55:42,506 log 15252 8736 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-18 23:55:42,506 basehttp 15252 8736 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3454
+INFO 2024-05-18 23:59:02,816 autoreload 15252 576 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-18 23:59:03,694 autoreload 5336 5732 Watching for file changes with StatReloader
+INFO 2024-05-18 23:59:04,988 basehttp 5336 6944 "GET /game/orel_reshka/ HTTP/1.1" 200 972
+WARNING 2024-05-18 23:59:05,031 log 5336 6944 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-18 23:59:05,031 basehttp 5336 6944 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3454
+INFO 2024-05-18 23:59:18,433 basehttp 5336 6944 "GET /game/orel_reshka/ HTTP/1.1" 200 1892
+WARNING 2024-05-18 23:59:18,471 log 5336 6944 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-18 23:59:18,471 basehttp 5336 6944 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3454
+INFO 2024-05-19 00:02:21,386 autoreload 5336 5732 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-19 00:02:22,269 autoreload 13140 8648 Watching for file changes with StatReloader
+INFO 2024-05-19 00:04:23,771 autoreload 13140 8648 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py changed, reloading.
+INFO 2024-05-19 00:04:24,643 autoreload 4960 13216 Watching for file changes with StatReloader
+ERROR 2024-05-19 00:04:29,579 log 4960 864 Internal Server Error: /game/cube/
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cube() missing 1 required positional argument: 'count'
+ERROR 2024-05-19 00:04:29,593 basehttp 4960 864 "GET /game/cube/ HTTP/1.1" 500 66228
+WARNING 2024-05-19 00:04:40,466 log 4960 864 Not Found: /game/cube/8
+WARNING 2024-05-19 00:04:40,466 basehttp 4960 864 "GET /game/cube/8 HTTP/1.1" 404 3376
+INFO 2024-05-19 00:05:56,756 autoreload 4960 13216 C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\urls.py changed, reloading.
+INFO 2024-05-19 00:05:57,777 autoreload 2624 10524 Watching for file changes with StatReloader
+INFO 2024-05-19 00:05:58,633 basehttp 2624 15048 "GET /game/cube/8 HTTP/1.1" 200 1118
+WARNING 2024-05-19 00:05:58,692 log 2624 15048 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-19 00:05:58,704 basehttp 2624 15048 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3471
+INFO 2024-05-19 00:06:13,593 basehttp 2624 15048 "GET /game/cube/9 HTTP/1.1" 200 1138
+WARNING 2024-05-19 00:06:13,646 log 2624 15048 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-19 00:06:13,662 basehttp 2624 15048 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3471
+INFO 2024-05-19 00:06:16,804 basehttp 2624 15048 "GET /game/cube/9 HTTP/1.1" 200 1138
+WARNING 2024-05-19 00:06:16,857 log 2624 15048 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-19 00:06:16,857 basehttp 2624 15048 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3471
+INFO 2024-05-19 00:06:32,778 basehttp 2624 15048 "GET /shop/index HTTP/1.1" 200 995
+INFO 2024-05-19 00:06:36,294 basehttp 2624 15048 "GET /shop/about HTTP/1.1" 200 1625
+ERROR 2024-05-19 00:07:47,244 log 2624 15048 Internal Server Error: /game/cube/9
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'urlfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\newapp\views.py", line 34, in cube
+    return render(request, 'newapp/index.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 565, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'urlfor'. Did you forget to register or load this tag?
+ERROR 2024-05-19 00:07:47,283 basehttp 2624 15048 "GET /game/cube/9 HTTP/1.1" 500 168009
+INFO 2024-05-19 00:08:03,565 basehttp 2624 15048 "GET /game/cube/9 HTTP/1.1" 200 1138
+WARNING 2024-05-19 00:08:03,644 log 2624 15048 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-19 00:08:03,646 basehttp 2624 15048 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3471
+INFO 2024-05-19 00:08:04,825 basehttp 2624 15048 "GET /shop/index HTTP/1.1" 200 995
+INFO 2024-05-19 00:10:19,243 basehttp 2624 12664 "GET /game/cube/88 HTTP/1.1" 200 2718
+WARNING 2024-05-19 00:10:19,308 log 2624 12664 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-19 00:10:19,308 basehttp 2624 12664 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3471
+INFO 2024-05-19 00:10:52,099 basehttp 2624 12664 "GET /game/cube/88 HTTP/1.1" 200 2718
+WARNING 2024-05-19 00:10:52,180 log 2624 12664 Not Found: /game/static/shopapp/css/bootstrap.css
+WARNING 2024-05-19 00:10:52,182 basehttp 2624 12664 "GET /game/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3471
+INFO 2024-05-19 23:14:16,176 autoreload 14156 5988 Watching for file changes with StatReloader
+INFO 2024-05-19 23:14:21,511 basehttp 14156 11468 "GET / HTTP/1.1" 200 70
+ERROR 2024-05-19 23:14:46,411 log 14156 11468 Internal Server Error: /shop/orders/6
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_orders_by_customers_id() got an unexpected keyword argument 'customer_id'
+ERROR 2024-05-19 23:14:46,426 basehttp 14156 11468 "GET /shop/orders/6 HTTP/1.1" 500 66420
+INFO 2024-05-19 23:16:24,476 autoreload 14156 5988 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-19 23:16:25,353 autoreload 8324 9208 Watching for file changes with StatReloader
+ERROR 2024-05-19 23:16:28,029 log 8324 12184 Internal Server Error: /shop/orders/6
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_orders_by_customers_id() got an unexpected keyword argument 'customer_id'
+ERROR 2024-05-19 23:16:28,029 basehttp 8324 12184 "GET /shop/orders/6 HTTP/1.1" 500 66420
+ERROR 2024-05-19 23:16:30,980 log 8324 12184 Internal Server Error: /shop/orders/6
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_orders_by_customers_id() got an unexpected keyword argument 'customer_id'
+ERROR 2024-05-19 23:16:30,980 basehttp 8324 12184 "GET /shop/orders/6 HTTP/1.1" 500 66420
+INFO 2024-05-19 23:17:55,284 autoreload 8324 9208 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-19 23:17:56,387 autoreload 12164 9696 Watching for file changes with StatReloader
+ERROR 2024-05-19 23:17:59,329 log 12164 1188 Internal Server Error: /shop/orders/6
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_orders_by_customers_id() got an unexpected keyword argument 'customer_id'
+ERROR 2024-05-19 23:17:59,361 basehttp 12164 1188 "GET /shop/orders/6 HTTP/1.1" 500 66420
+INFO 2024-05-19 23:18:23,720 basehttp 12164 1188 "GET /shop/ HTTP/1.1" 200 995
+INFO 2024-05-19 23:18:23,867 basehttp 12164 1188 "GET /static/shopapp/css/bootstrap.css HTTP/1.1" 200 178152
+INFO 2024-05-19 23:18:26,627 basehttp 12164 1188 "GET /shop/about HTTP/1.1" 200 1625
+INFO 2024-05-19 23:18:26,759 basehttp 12164 1188 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 304 0
+INFO 2024-05-19 23:18:28,109 basehttp 12164 1188 "GET /shop/index HTTP/1.1" 200 995
+INFO 2024-05-19 23:18:29,435 basehttp 12164 1188 "GET /shop/about HTTP/1.1" 200 1625
+INFO 2024-05-19 23:18:32,799 basehttp 12164 1188 "GET /shop/index HTTP/1.1" 200 995
+WARNING 2024-05-19 23:18:45,884 log 12164 1188 Not Found: /shop/orders
+WARNING 2024-05-19 23:18:45,884 basehttp 12164 1188 "GET /shop/orders HTTP/1.1" 404 3359
+ERROR 2024-05-19 23:18:52,426 log 12164 1188 Internal Server Error: /shop/orders/5
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_orders_by_customers_id() got an unexpected keyword argument 'customer_id'
+ERROR 2024-05-19 23:18:52,426 basehttp 12164 1188 "GET /shop/orders/5 HTTP/1.1" 500 66420
+INFO 2024-05-19 23:22:39,483 autoreload 12164 9696 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-19 23:22:40,502 autoreload 10188 10992 Watching for file changes with StatReloader
+INFO 2024-05-19 23:22:42,507 basehttp 10188 11584 "GET /shop/orders/5 HTTP/1.1" 200 951
+WARNING 2024-05-19 23:22:42,553 log 10188 11584 Not Found: /shop/static/shopapp/css/bootstrap.css
+WARNING 2024-05-19 23:22:42,553 basehttp 10188 11584 "GET /shop/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3437
+ERROR 2024-05-19 23:22:51,863 log 10188 11584 Internal Server Error: /shop/orders/99
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view shopapp.views.get_orders_by_customers_id didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-05-19 23:22:51,879 basehttp 10188 11584 "GET /shop/orders/99 HTTP/1.1" 500 70956
+INFO 2024-05-19 23:23:00,190 basehttp 10188 11584 "GET /shop/orders/5 HTTP/1.1" 200 951
+WARNING 2024-05-19 23:23:00,268 log 10188 11584 Not Found: /shop/static/shopapp/css/bootstrap.css
+WARNING 2024-05-19 23:23:00,268 basehttp 10188 11584 "GET /shop/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3437
+INFO 2024-05-19 23:23:03,728 basehttp 10188 11584 "GET /shop/orders/6 HTTP/1.1" 200 952
+WARNING 2024-05-19 23:23:03,797 log 10188 11584 Not Found: /shop/static/shopapp/css/bootstrap.css
+WARNING 2024-05-19 23:23:03,797 basehttp 10188 11584 "GET /shop/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3437
+INFO 2024-05-19 23:23:47,841 basehttp 10188 11584 "GET /shop/index HTTP/1.1" 200 995
+INFO 2024-05-19 23:23:49,437 basehttp 10188 11584 "GET /shop/about HTTP/1.1" 200 1625
+INFO 2024-05-19 23:24:59,241 autoreload 10188 10992 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\models.py changed, reloading.
+INFO 2024-05-19 23:25:01,423 autoreload 13256 11184 Watching for file changes with StatReloader
+INFO 2024-05-19 23:25:06,815 basehttp 13256 3268 "GET /shop/index HTTP/1.1" 200 995
+INFO 2024-05-19 23:25:09,956 basehttp 13256 3268 "GET /shop/about HTTP/1.1" 200 1625
+ERROR 2024-05-19 23:25:18,922 log 13256 3268 Internal Server Error: /shop/orders/20
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view shopapp.views.get_orders_by_customers_id didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-05-19 23:25:18,922 basehttp 13256 3268 "GET /shop/orders/20 HTTP/1.1" 500 70956
+INFO 2024-05-19 23:27:29,168 autoreload 13256 11184 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-19 23:27:30,153 autoreload 2180 4780 Watching for file changes with StatReloader
+ERROR 2024-05-19 23:27:32,270 log 2180 10420 Internal Server Error: /shop/orders/20
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 33, in get_orders_by_customers_id
+    else:raise ValueError('ERRORA!!!')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: ERRORA!!!
+ERROR 2024-05-19 23:27:32,320 basehttp 2180 10420 "GET /shop/orders/20 HTTP/1.1" 500 69227
+INFO 2024-05-19 23:30:57,393 autoreload 2180 4780 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-19 23:30:58,801 autoreload 10016 11224 Watching for file changes with StatReloader
+ERROR 2024-05-19 23:31:01,255 log 10016 13060 Internal Server Error: /shop/orders/20
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 26, in get_orders_by_customers_id
+    customer = get_object_or_404(pk=customer_id)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_object_or_404() missing 1 required positional argument: 'klass'
+ERROR 2024-05-19 23:31:01,255 basehttp 10016 13060 "GET /shop/orders/20 HTTP/1.1" 500 70420
+INFO 2024-05-19 23:31:23,579 autoreload 10016 11224 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-19 23:31:24,513 autoreload 12380 9208 Watching for file changes with StatReloader
+WARNING 2024-05-19 23:31:27,606 log 12380 8996 Not Found: /shop/orders/20
+WARNING 2024-05-19 23:31:27,606 basehttp 12380 8996 "GET /shop/orders/20 HTTP/1.1" 404 3548
+INFO 2024-05-19 23:31:37,310 basehttp 12380 8996 "GET /shop/orders/10 HTTP/1.1" 200 953
+WARNING 2024-05-19 23:31:37,363 log 12380 8996 Not Found: /shop/static/shopapp/css/bootstrap.css
+WARNING 2024-05-19 23:31:37,363 basehttp 12380 8996 "GET /shop/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3437
+INFO 2024-05-19 23:31:40,649 basehttp 12380 8996 "GET /shop/orders/9 HTTP/1.1" 200 946
+WARNING 2024-05-19 23:31:40,718 log 12380 8996 Not Found: /shop/static/shopapp/css/bootstrap.css
+WARNING 2024-05-19 23:31:40,718 basehttp 12380 8996 "GET /shop/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3437
+INFO 2024-05-20 00:03:34,239 autoreload 12380 9208 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\models.py changed, reloading.
+INFO 2024-05-20 00:03:35,150 autoreload 3048 6712 Watching for file changes with StatReloader
+INFO 2024-05-20 00:31:20,254 autoreload 3048 6712 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-20 00:31:21,071 autoreload 3580 11120 Watching for file changes with StatReloader
+INFO 2024-05-20 00:31:49,348 autoreload 3580 11120 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\urls.py changed, reloading.
+INFO 2024-05-20 00:31:50,227 autoreload 7956 13424 Watching for file changes with StatReloader
+INFO 2024-05-20 00:31:54,121 autoreload 7956 13424 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\urls.py changed, reloading.
+INFO 2024-05-20 00:31:54,920 autoreload 11592 6100 Watching for file changes with StatReloader
+INFO 2024-05-20 00:32:01,679 basehttp 11592 12692 "GET / HTTP/1.1" 200 70
+ERROR 2024-05-20 00:32:26,977 log 11592 12692 Internal Server Error: /shop/orders_by_time/6
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_products() missing 1 required positional argument: 'period'
+ERROR 2024-05-20 00:32:26,977 basehttp 11592 12692 "GET /shop/orders_by_time/6 HTTP/1.1" 500 66394
+INFO 2024-05-20 00:33:04,585 autoreload 11592 6100 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-20 00:33:05,502 autoreload 9448 8988 Watching for file changes with StatReloader
+INFO 2024-05-20 00:33:24,952 autoreload 9448 8988 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-20 00:33:25,753 autoreload 11768 9340 Watching for file changes with StatReloader
+ERROR 2024-05-20 00:33:30,943 log 11768 8304 Internal Server Error: /shop/orders_by_time/6
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 38, in get_products
+    week_orders = Order.objects.filter(customer=customer).order_by('-id').group_by('date_ordered')[:7]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'group_by'
+ERROR 2024-05-20 00:33:30,959 basehttp 11768 8304 "GET /shop/orders_by_time/6 HTTP/1.1" 500 70728
+INFO 2024-05-20 00:36:30,211 autoreload 11768 9340 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-20 00:36:31,072 autoreload 5240 14256 Watching for file changes with StatReloader
+ERROR 2024-05-20 00:36:47,251 log 5240 14032 Internal Server Error: /shop/orders_by_time/6
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 38, in get_products
+    week_orders = Order.objects.group_by('date_ordered').filter(customer=customer).order_by('-id')[:7]
+                  ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Manager' object has no attribute 'group_by'
+ERROR 2024-05-20 00:36:47,251 basehttp 5240 14032 "GET /shop/orders_by_time/6 HTTP/1.1" 500 70640
+INFO 2024-05-20 00:38:01,959 autoreload 5240 14256 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-20 00:38:03,591 autoreload 7176 4836 Watching for file changes with StatReloader
+ERROR 2024-05-20 00:38:08,221 log 7176 10992 Internal Server Error: /shop/orders_by_time/6
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 38, in get_products
+    week_orders = Order.objects.ilter(customer=customer).order_by('-id')[:7]
+                  ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Manager' object has no attribute 'ilter'
+ERROR 2024-05-20 00:38:08,236 basehttp 7176 10992 "GET /shop/orders_by_time/6 HTTP/1.1" 500 70480
+INFO 2024-05-20 00:38:22,318 autoreload 7176 4836 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-20 00:38:23,244 autoreload 7804 12484 Watching for file changes with StatReloader
+INFO 2024-05-20 00:38:25,734 basehttp 7804 10036 "GET /shop/orders_by_time/6 HTTP/1.1" 200 1082
+WARNING 2024-05-20 00:38:25,786 log 7804 10036 Not Found: /shop/static/shopapp/css/bootstrap.css
+WARNING 2024-05-20 00:38:25,786 basehttp 7804 10036 "GET /shop/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3650
+INFO 2024-05-20 00:56:45,868 autoreload 7804 12484 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-20 00:56:46,877 autoreload 8412 1492 Watching for file changes with StatReloader
+INFO 2024-05-20 00:56:49,601 basehttp 8412 3068 "GET /shop/orders_by_time/6 HTTP/1.1" 200 1082
+WARNING 2024-05-20 00:56:49,873 log 8412 3068 Not Found: /shop/static/shopapp/css/bootstrap.css
+WARNING 2024-05-20 00:56:49,873 basehttp 8412 3068 "GET /shop/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3650
+WARNING 2024-05-20 00:57:16,278 log 8412 3068 Not Found: /shop/orders_by_time/89
+WARNING 2024-05-20 00:57:16,278 basehttp 8412 3068 "GET /shop/orders_by_time/89 HTTP/1.1" 404 3771
+INFO 2024-05-20 00:57:29,319 basehttp 8412 3068 "GET /shop/orders_by_time/4 HTTP/1.1" 200 1082
+WARNING 2024-05-20 00:57:29,376 log 8412 3068 Not Found: /shop/static/shopapp/css/bootstrap.css
+WARNING 2024-05-20 00:57:29,388 basehttp 8412 3068 "GET /shop/static/shopapp/css/bootstrap.css HTTP/1.1" 404 3650

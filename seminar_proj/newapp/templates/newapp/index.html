@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}{{ name }}{% endblock %}
+
+{% block content %}
+    <h1>Добро пожаловать в игру!!</h1>
+    <h2>Это игра {{ name }} </h2>
+    <h2>Результаты игры</h2>
+<ul>
+    {% for r in result %}
+    <li>{{ r }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

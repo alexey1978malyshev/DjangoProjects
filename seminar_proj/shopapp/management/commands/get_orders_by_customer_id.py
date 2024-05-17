@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from shopapp.models import Customer, Products, Orders
+from shopapp.models import Customer, Product, Order
 
 
 class Command(BaseCommand):
@@ -12,7 +12,7 @@ class Command(BaseCommand):
         pk = kwargs.get('pk')
         customer = Customer.objects.filter(pk=pk).first()
         if customer is not None:
-            orders = Orders.objects.filter(customer=customer)
+            orders = Order.objects.filter(customer=customer)
             intro = f'All orders of {customer.name}\n'
             ords = '\n'.join(str(order) for order in orders)
             self.stdout.write(f'{intro}{ords}')
