@@ -5,6 +5,7 @@ from django.http import HttpResponse, JsonResponse
 from django.views.generic import TemplateView
 from django.utils import timezone
 from .models import Customer, Product, Order
+from .forms import UpdateProdForm
 
 
 def index(request):
@@ -40,3 +41,26 @@ def get_products(request, customer_id: int):
         year_orders = Order.objects.filter(customer=customer).order_by('-date_ordered')[:365]
         context = {'week_orders': week_orders, 'month_orders': month_orders, 'year_orders': year_orders}
         return render(request, "shopapp/orders_by_time.html", context)
+
+
+def update_prod(request, prod_id: int):
+    if request.method == 'POST':
+        form = UpdateProdForm(request.POST)
+        if form.is_valid():
+            product = Product()
+            product.pk = prod_id
+            product.name = form.cleaned_data['name']
+            product.description = form.cleaned_data['description']
+            product.price = form.cleaned_data['price']
+            product.quantity = form.cleaned_data['quantity']
+            product.added_date = form.cleaned_data['added_date']
+            product.save()
+            message = f'Продукт: {product}\nизменен'
+            return render(request, 'shopapp/update_prod.html', {'message': message})
+
+    else:
+        product = Product.objects.filter(pk=prod_id).first()
+        form = UpdateProdForm()
+        if product is not None:
+            message = f'Внесите необходимые изменения в товар id={product.pk}, наименование - {product.name} '
+            return render(request, 'shopapp/update_prod.html', {'form': form, 'message': message})

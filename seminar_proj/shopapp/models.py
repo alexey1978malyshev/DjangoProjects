@@ -23,6 +23,7 @@ class Product(models.Model):
         return f'Product: {self.name}, price: {self.price}, quantity: {self.quantity}.'
 
 
+
 class Order(models.Model):
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
     products = models.ManyToManyField(Product)

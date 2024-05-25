@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'myapp',
     'myapp2',
-    'shopapp',
+    'myapp3',
+    'myapp4_forms',
+
 ]
 
 MIDDLEWARE = [
@@ -116,6 +118,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
@@ -151,7 +156,7 @@ LOGGING = {
             'handlers': ['console', 'file'],
             'level': 'INFO',
         },
-        'myapp': {
+        'myapp4_forms': {
             'handlers': ['console', 'file'],
             'level': 'DEBUG',
             'propagate': True,

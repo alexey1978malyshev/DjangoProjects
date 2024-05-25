@@ -2,7 +2,7 @@ from django.views import View
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import TemplateView
-from .models import  Author, Post
+from .models import Author, Post
 
 def hello(request):
     return HttpResponse("Hello World from function!")
@@ -40,11 +40,11 @@ def post_detail(request, year, month, slug):
 
 def my_view(request):
     context = {"name": "Alexy"}
-    return render(request, "shopapp/my_template.html", context)
+    return render(request, "myapp3/my_template.html", context)
 
 
 class TemplIf(TemplateView):
-    template_name = "shopapp/templ_if.html"
+    template_name = "myapp3/templ_if.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -65,23 +65,23 @@ def view_for(request):
         'фазан': 'фиолетовый',
     }
     context = {'my_list': my_list, 'my_dict': my_dict}
-    return render(request, 'shopapp/templ_for.html', context)
+    return render(request, 'myapp3/templ_for.html', context)
 
 
 def index(request):
-    return render(request, "shopapp/index.html")
+    return render(request, "myapp3/index.html")
 
 
 def about(request):
-    return render(request, "shopapp/about.html")
+    return render(request, "myapp3/about.html")
 
 
 def author_posts(request, author_id):
     author = get_object_or_404(Author, pk=author_id)
     posts = Post.objects.filter(author=author).order_by('-id')[:5]
-    return render(request, 'shopapp/author_posts.html', {'author': author, 'posts': posts})
+    return render(request, 'myapp3/author_posts.html', {'author': author, 'posts': posts})
 
 
 def post_full(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
-    return render(request, 'shopapp/post_full.html', {'post': post})
+    return render(request, 'myapp3/post_full.html', {'post': post})
