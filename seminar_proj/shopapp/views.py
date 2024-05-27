@@ -5,7 +5,8 @@ from django.http import HttpResponse, JsonResponse
 from django.views.generic import TemplateView
 from django.utils import timezone
 from .models import Customer, Product, Order
-from .forms import UpdateProdForm
+from .forms import UpdateProdForm, ImageForm
+from django.core.files.storage import FileSystemStorage
 
 
 def index(request):
@@ -45,6 +46,7 @@ def get_products(request, customer_id: int):
 
 def update_prod(request, prod_id: int):
     if request.method == 'POST':
+        message = 'Внесите изменения'
         form = UpdateProdForm(request.POST)
         if form.is_valid():
             product = Product()
@@ -54,8 +56,11 @@ def update_prod(request, prod_id: int):
             product.price = form.cleaned_data['price']
             product.quantity = form.cleaned_data['quantity']
             product.added_date = form.cleaned_data['added_date']
+            # image = form.cleaned_data['image']
+            # product.image = image
+            # fs = FileSystemStorage()
+            # fs.save(image.name, image)
             product.save()
-            
             message = f'Продукт: {product}\nизменен'
             return render(request, 'shopapp/update_prod.html', {'message': message})
 
@@ -65,7 +70,6 @@ def update_prod(request, prod_id: int):
         if product is not None:
             message = f'Внесите необходимые изменения в товар id={product.pk}, наименование - {product.name} '
             return render(request, 'shopapp/update_prod.html', {'form': form, 'message': message})
-
 
 
 def upload_image(request):

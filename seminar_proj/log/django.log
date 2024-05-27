@@ -5082,3 +5082,221 @@ INFO 2024-05-25 20:23:12,622 autoreload 12044 137382128476160 /home/alexey/Pytho
 INFO 2024-05-25 20:23:17,757 autoreload 12942 131200518733824 Watching for file changes with StatReloader
 INFO 2024-05-25 20:24:28,184 autoreload 12942 131200518733824 /home/alexey/Python_projects/Django/DjangoProjects/seminar_proj/shopapp/forms.py changed, reloading.
 INFO 2024-05-25 20:24:34,244 autoreload 13131 130646585401344 Watching for file changes with StatReloader
+INFO 2024-05-27 13:23:39,071 autoreload 10212 10740 Watching for file changes with StatReloader
+WARNING 2024-05-27 13:24:07,070 log 10212 5996 Not Found: /favicon.ico
+INFO 2024-05-27 13:24:07,070 basehttp 10212 5996 - Broken pipe from ('127.0.0.1', 59207)
+INFO 2024-05-27 13:24:27,243 basehttp 10212 7484 "GET /shop/upload HTTP/1.1" 301 0
+ERROR 2024-05-27 13:24:27,315 log 10212 7208 Internal Server Error: /shop/upload/
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 79, in upload_image
+    form = ImageForm()
+           ^^^^^^^^^
+NameError: name 'ImageForm' is not defined
+ERROR 2024-05-27 13:24:27,362 basehttp 10212 7208 "GET /shop/upload/ HTTP/1.1" 500 69044
+INFO 2024-05-27 13:25:00,635 autoreload 10212 10740 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-27 13:25:02,022 autoreload 2472 7204 Watching for file changes with StatReloader
+INFO 2024-05-27 13:25:05,986 basehttp 2472 7080 "GET /shop/upload/ HTTP/1.1" 200 1392
+ERROR 2024-05-27 13:28:08,214 log 2472 8372 Internal Server Error: /shop/upload/
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 76, in upload_image
+    fs = FileSystemStorage()
+         ^^^^^^^^^^^^^^^^^
+NameError: name 'FileSystemStorage' is not defined
+ERROR 2024-05-27 13:28:08,214 basehttp 2472 8372 "POST /shop/upload/ HTTP/1.1" 500 70985
+INFO 2024-05-27 13:29:28,890 autoreload 2472 7204 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-27 13:29:30,499 autoreload 764 11688 Watching for file changes with StatReloader
+INFO 2024-05-27 13:30:43,270 basehttp 764 11252 "POST /shop/upload/ HTTP/1.1" 200 1392
+INFO 2024-05-27 15:20:00,348 autoreload 764 11688 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-27 15:20:02,848 autoreload 1120 9264 Watching for file changes with StatReloader
+INFO 2024-05-27 15:20:08,981 autoreload 1120 9264 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-27 15:20:10,034 autoreload 6244 1996 Watching for file changes with StatReloader
+INFO 2024-05-27 15:24:49,084 autoreload 6244 1996 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\forms.py changed, reloading.
+INFO 2024-05-27 15:24:50,076 autoreload 968 11276 Watching for file changes with StatReloader
+WARNING 2024-05-27 15:24:56,263 log 968 1212 Not Found: /shop/update_prod
+WARNING 2024-05-27 15:24:56,263 basehttp 968 1212 "GET /shop/update_prod HTTP/1.1" 404 3970
+ERROR 2024-05-27 15:25:21,421 log 968 1212 Internal Server Error: /shop/update_prod/8
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 69, in update_prod
+    return render(request, 'shopapp/update_prod.html', {'form': form, 'message': message})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\template\base.py", line 565, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 12: 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-05-27 15:25:21,436 basehttp 968 1212 "GET /shop/update_prod/8 HTTP/1.1" 500 156542
+INFO 2024-05-27 15:27:33,821 basehttp 968 1144 "GET /shop/update_prod/8 HTTP/1.1" 200 2471
+ERROR 2024-05-27 15:28:07,585 log 968 1144 Internal Server Error: /shop/update_prod/8
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view shopapp.views.update_prod didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-05-27 15:28:07,600 basehttp 968 1144 "POST /shop/update_prod/8 HTTP/1.1" 500 72374
+INFO 2024-05-27 15:29:50,841 autoreload 968 11276 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-27 15:29:51,995 autoreload 7876 1532 Watching for file changes with StatReloader
+ERROR 2024-05-27 15:29:53,722 log 7876 1528 Internal Server Error: /shop/update_prod/8
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 61, in update_prod
+    return render(request, 'shopapp/update_prod.html', {'message': message})
+                                                                   ^^^^^^^
+UnboundLocalError: cannot access local variable 'message' where it is not associated with a value
+ERROR 2024-05-27 15:29:53,737 basehttp 7876 1528 "POST /shop/update_prod/8 HTTP/1.1" 500 72522
+INFO 2024-05-27 15:30:31,600 autoreload 7876 1532 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-27 15:30:33,407 autoreload 6888 9220 Watching for file changes with StatReloader
+INFO 2024-05-27 15:30:37,455 basehttp 6888 9400 "POST /shop/update_prod/8 HTTP/1.1" 200 1191
+INFO 2024-05-27 15:30:43,553 basehttp 6888 9400 "POST /shop/update_prod/8 HTTP/1.1" 200 1191
+INFO 2024-05-27 15:31:16,614 basehttp 6888 9400 "GET /shop/update_prod/8 HTTP/1.1" 200 2471
+INFO 2024-05-27 15:31:42,706 basehttp 6888 9400 "POST /shop/update_prod/8 HTTP/1.1" 200 1191
+INFO 2024-05-27 15:35:33,258 autoreload 6888 9220 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-27 15:35:34,516 autoreload 6800 1944 Watching for file changes with StatReloader
+INFO 2024-05-27 15:35:39,039 basehttp 6800 11268 "GET /shop/update_prod/8 HTTP/1.1" 200 2471
+ERROR 2024-05-27 15:36:18,237 log 6800 11268 Internal Server Error: /shop/update_prod/8
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view shopapp.views.update_prod didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-05-27 15:36:18,252 basehttp 6800 11268 "POST /shop/update_prod/8 HTTP/1.1" 500 72390
+INFO 2024-05-27 15:36:52,861 autoreload 6800 1944 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-27 15:36:54,268 autoreload 1924 11404 Watching for file changes with StatReloader
+ERROR 2024-05-27 15:36:58,056 log 1924 11148 Internal Server Error: /shop/update_prod/8
+Traceback (most recent call last):
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py", line 70, in update_prod
+    return render(request, 'shopapp/update_prod.html', {'form': form, 'message': message})
+                                                                                 ^^^^^^^
+UnboundLocalError: cannot access local variable 'message' where it is not associated with a value
+ERROR 2024-05-27 15:36:58,056 basehttp 1924 11148 "POST /shop/update_prod/8 HTTP/1.1" 500 72382
+INFO 2024-05-27 15:37:59,424 autoreload 1924 11404 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-27 15:38:00,909 autoreload 2104 11204 Watching for file changes with StatReloader
+INFO 2024-05-27 15:38:04,820 basehttp 2104 11196 "POST /shop/update_prod/8 HTTP/1.1" 200 2538
+INFO 2024-05-27 15:38:19,918 basehttp 2104 11196 "POST /shop/update_prod/8 HTTP/1.1" 200 2538
+INFO 2024-05-27 15:39:39,363 basehttp 2104 11196 "POST /shop/update_prod/8 HTTP/1.1" 200 2538
+INFO 2024-05-27 15:48:53,305 autoreload 2104 11204 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-27 15:48:55,090 autoreload 9040 11028 Watching for file changes with StatReloader
+INFO 2024-05-27 15:48:55,836 basehttp 9040 8360 "GET /shop/update_prod/8 HTTP/1.1" 200 2471
+INFO 2024-05-27 15:49:16,699 basehttp 9040 8360 "POST /shop/update_prod/8 HTTP/1.1" 200 2532
+INFO 2024-05-27 15:49:36,539 basehttp 9040 8360 "POST /shop/update_prod/8 HTTP/1.1" 200 2532
+INFO 2024-05-27 15:50:09,999 autoreload 9040 11028 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-27 15:50:10,971 autoreload 11904 6204 Watching for file changes with StatReloader
+INFO 2024-05-27 15:50:29,835 basehttp 11904 10092 "POST /shop/update_prod/8 HTTP/1.1" 200 2532
+INFO 2024-05-27 15:59:02,901 autoreload 11904 6204 C:\Users\A9219\PycharmProjects\Django\seminar_proj\seminar_proj\settings.py changed, reloading.
+INFO 2024-05-27 15:59:04,274 autoreload 8656 9896 Watching for file changes with StatReloader
+WARNING 2024-05-27 18:54:36,672 log 8656 12104 Not Found: /shop/upload_image
+WARNING 2024-05-27 18:54:36,672 basehttp 8656 12104 "GET /shop/upload_image HTTP/1.1" 404 3973
+INFO 2024-05-27 18:54:48,160 autoreload 11852 5924 Watching for file changes with StatReloader
+WARNING 2024-05-27 18:54:57,162 log 11852 7504 Not Found: /shop/upload_image
+WARNING 2024-05-27 18:54:57,233 basehttp 11852 7504 "GET /shop/upload_image HTTP/1.1" 404 3973
+INFO 2024-05-27 18:55:17,601 basehttp 11852 7504 "GET /shop/upload/ HTTP/1.1" 200 1392
+INFO 2024-05-27 18:55:28,475 basehttp 11852 7504 "POST /shop/upload/ HTTP/1.1" 200 1392
+WARNING 2024-05-27 18:57:00,976 log 11852 7504 Not Found: /shop/update_prod
+WARNING 2024-05-27 18:57:00,988 basehttp 11852 7504 "GET /shop/update_prod HTTP/1.1" 404 3970
+INFO 2024-05-27 18:57:22,882 basehttp 11852 7504 "GET /shop/update_prod/5 HTTP/1.1" 200 2469
+INFO 2024-05-27 18:57:43,091 basehttp 11852 7504 "POST /shop/update_prod/5 HTTP/1.1" 200 2581
+INFO 2024-05-27 19:03:35,253 autoreload 11852 5924 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-27 19:03:36,422 autoreload 3672 3056 Watching for file changes with StatReloader
+INFO 2024-05-27 19:03:39,525 basehttp 3672 10568 "GET /shop/update_prod/5 HTTP/1.1" 200 2469
+WARNING 2024-05-27 19:03:39,646 log 3672 10568 Not Found: /favicon.ico
+INFO 2024-05-27 19:03:39,681 basehttp 3672 10568 - Broken pipe from ('127.0.0.1', 60318)
+INFO 2024-05-27 19:04:26,370 basehttp 3672 3168 "POST /shop/update_prod/5 HTTP/1.1" 200 2523
+INFO 2024-05-27 19:05:42,211 autoreload 3672 3056 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-27 19:05:43,373 autoreload 9932 11892 Watching for file changes with StatReloader
+INFO 2024-05-27 19:06:16,813 basehttp 9932 6868 "POST /shop/update_prod/5 HTTP/1.1" 200 2523
+INFO 2024-05-27 19:06:31,025 basehttp 9932 6868 "POST /shop/update_prod/5 HTTP/1.1" 200 2523
+INFO 2024-05-27 19:07:15,939 autoreload 9932 11892 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-27 19:07:17,279 autoreload 11056 7036 Watching for file changes with StatReloader
+INFO 2024-05-27 19:07:18,112 basehttp 11056 10312 "GET /shop/update_prod/5 HTTP/1.1" 200 2469
+INFO 2024-05-27 19:07:48,146 basehttp 11056 10312 "POST /shop/update_prod/5 HTTP/1.1" 200 2568
+INFO 2024-05-27 19:09:10,893 autoreload 11056 7036 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-27 19:09:12,179 autoreload 2548 9116 Watching for file changes with StatReloader
+INFO 2024-05-27 19:21:01,650 autoreload 9744 3444 Watching for file changes with StatReloader
+INFO 2024-05-27 19:21:09,688 basehttp 9744 9996 "GET /shop/update_prod/5 HTTP/1.1" 200 2499
+INFO 2024-05-27 19:21:34,320 basehttp 9744 9996 "POST /shop/update_prod/5 HTTP/1.1" 200 2548
+INFO 2024-05-27 19:23:21,190 basehttp 9744 9996 "GET /shop/upload/ HTTP/1.1" 200 1392
+INFO 2024-05-27 19:23:26,856 basehttp 9744 9996 "POST /shop/upload/ HTTP/1.1" 200 1392
+INFO 2024-05-27 19:26:07,249 autoreload 9744 3444 C:\Users\A9219\PycharmProjects\Django\seminar_proj\shopapp\views.py changed, reloading.
+INFO 2024-05-27 19:26:08,466 autoreload 6708 1208 Watching for file changes with StatReloader
