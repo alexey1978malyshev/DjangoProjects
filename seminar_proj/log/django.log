@@ -5059,3 +5059,26 @@ INFO 2024-05-25 02:42:58,321 basehttp 6212 12700 "GET /shop/update_prod/5 HTTP/1
 INFO 2024-05-25 02:43:33,402 basehttp 6212 12700 "POST /shop/update_prod/5 HTTP/1.1" 200 1279
 INFO 2024-05-25 02:44:10,038 basehttp 6212 12700 "POST /shop/update_prod/5 HTTP/1.1" 200 1279
 INFO 2024-05-25 02:44:13,162 basehttp 6212 12700 "GET /shop/update_prod/5 HTTP/1.1" 200 2337
+INFO 2024-05-25 20:05:06,871 autoreload 11141 127295013351424 Watching for file changes with StatReloader
+INFO 2024-05-25 20:06:14,247 autoreload 11445 139487889719296 Watching for file changes with StatReloader
+INFO 2024-05-25 20:06:35,462 basehttp 11445 139487834109504 "GET / HTTP/1.1" 200 70
+WARNING 2024-05-25 20:06:36,380 log 11445 139487834109504 Not Found: /favicon.ico
+WARNING 2024-05-25 20:06:36,385 basehttp 11445 139487834109504 "GET /favicon.ico HTTP/1.1" 404 2759
+WARNING 2024-05-25 20:07:06,007 log 11445 139487834109504 Not Found: /i
+WARNING 2024-05-25 20:07:06,008 basehttp 11445 139487834109504 "GET /i HTTP/1.1" 404 2729
+INFO 2024-05-25 20:07:23,098 basehttp 11445 139487834109504 "GET /shop HTTP/1.1" 301 0
+INFO 2024-05-25 20:07:23,337 basehttp 11445 139487834109504 "GET /shop/ HTTP/1.1" 200 1135
+INFO 2024-05-25 20:07:30,707 basehttp 11445 139487834109504 "GET /shop/about HTTP/1.1" 200 1761
+INFO 2024-05-25 20:07:31,190 basehttp 11445 139487834109504 "GET /static/shopapp/my_foto.jpg HTTP/1.1" 200 134920
+INFO 2024-05-25 20:07:56,223 basehttp 11445 139487834109504 "GET /shop/index HTTP/1.1" 200 1135
+WARNING 2024-05-25 20:08:42,559 log 11445 139487834109504 Not Found: /shop/add_author
+WARNING 2024-05-25 20:08:42,560 basehttp 11445 139487834109504 "GET /shop/add_author HTTP/1.1" 404 3787
+INFO 2024-05-25 20:09:26,245 autoreload 11445 139487889719296 /home/alexey/Python_projects/Django/DjangoProjects/seminar_proj/shopapp/urls.py changed, reloading.
+INFO 2024-05-25 20:09:27,304 autoreload 12044 137382128476160 Watching for file changes with StatReloader
+INFO 2024-05-25 20:10:02,358 basehttp 12044 137382073022016 "GET /shop/update_prod/9 HTTP/1.1" 200 2328
+INFO 2024-05-25 20:10:37,318 basehttp 12044 137382073022016 "POST /shop/update_prod/9 HTTP/1.1" 200 1274
+INFO 2024-05-25 20:10:50,467 basehttp 12044 137382073022016 "GET /shop/index HTTP/1.1" 200 1135
+INFO 2024-05-25 20:23:12,622 autoreload 12044 137382128476160 /home/alexey/Python_projects/Django/DjangoProjects/seminar_proj/shopapp/models.py changed, reloading.
+INFO 2024-05-25 20:23:17,757 autoreload 12942 131200518733824 Watching for file changes with StatReloader
+INFO 2024-05-25 20:24:28,184 autoreload 12942 131200518733824 /home/alexey/Python_projects/Django/DjangoProjects/seminar_proj/shopapp/forms.py changed, reloading.
+INFO 2024-05-25 20:24:34,244 autoreload 13131 130646585401344 Watching for file changes with StatReloader

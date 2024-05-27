@@ -55,6 +55,7 @@ def update_prod(request, prod_id: int):
             product.quantity = form.cleaned_data['quantity']
             product.added_date = form.cleaned_data['added_date']
             product.save()
+            
             message = f'Продукт: {product}\nизменен'
             return render(request, 'shopapp/update_prod.html', {'message': message})
 
@@ -64,3 +65,16 @@ def update_prod(request, prod_id: int):
         if product is not None:
             message = f'Внесите необходимые изменения в товар id={product.pk}, наименование - {product.name} '
             return render(request, 'shopapp/update_prod.html', {'form': form, 'message': message})
+
+
+
+def upload_image(request):
+    if request.method == 'POST':
+        form = ImageForm(request.POST, request.FILES)
+        if form.is_valid():
+            image = form.cleaned_data['image']
+            fs = FileSystemStorage()
+            fs.save(image.name, image)
+    else:
+        form = ImageForm()
+    return render(request, 'shopapp/upload_image.html', {'form': form})

@@ -1,15 +1,12 @@
-{% extends 'base.html' %}
-{% block title %}{{ name }}{% endblock %}
+{% extends 'base.html' %} {% block title %}{{ name }}{% endblock %} {% block
+content %}
 
-{% block content %}
-
-<h2> {{ message }} </h2>
+<h2>{{ message }}</h2>
 
 <form action="" method="post">
-    {% csrf_token %}
-    {{ form.as_div }}
-    <input type="submit" value="Применить изменения">
+  {% csrf_token %} {{ form.as_div }}
+  <input type="submit" value="Применить изменения" />
+  <input type="submit" value="Применить изменения" />
 </form>
-
+<input type="submit" value="Заргузить фото" />
 {% endblock %}
-

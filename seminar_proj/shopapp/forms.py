@@ -10,4 +10,8 @@ class UpdateProdForm(forms.Form):
     price = forms.DecimalField(min_value=0, widget=forms.NumberInput(attrs={'class': 'form-control'}))
     quantity = forms.IntegerField(min_value=0, widget=forms.NumberInput(attrs={'class': 'form-control', 'placeholder': 'Количество товара'}))
     added_date = forms.DateField(initial=datetime.date.today, widget=forms.DateInput(attrs={'class': 'form-control', 'type': 'date', 'placeholder': 'Дата поступления товара'}))
+    
+
+class ImageForm(forms.Form):
+    image = forms.ImageField()
 
