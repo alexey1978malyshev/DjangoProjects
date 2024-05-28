@@ -9,5 +9,6 @@ urlpatterns = [
     path('orders_by_time/<int:customer_id>', views.get_products, name='orders_by_time'),
     path('update_prod/<int:prod_id>', views.update_prod, name='update_prod'),
     path('upload/', views.upload_image, name='upload_image'),
+    path('create/', views.image_create, name='create'),
 
 ]

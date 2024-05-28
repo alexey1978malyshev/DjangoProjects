@@ -5,8 +5,12 @@ from django.http import HttpResponse, JsonResponse
 from django.views.generic import TemplateView
 from django.utils import timezone
 from .models import Customer, Product, Order
-from .forms import UpdateProdForm, ImageForm
+from .forms import UpdateProdForm, ImageForm, ImageCreateForm
 from django.core.files.storage import FileSystemStorage
+from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
+from django.contrib import messages
+
 
 
 def index(request):
@@ -45,9 +49,10 @@ def get_products(request, customer_id: int):
 
 
 def update_prod(request, prod_id: int):
+    message = 'Внесите изменения'
     if request.method == 'POST':
-        message = 'Внесите изменения'
-        form = UpdateProdForm(request.POST)
+
+        form = UpdateProdForm(request.POST, request.FILES)
         if form.is_valid():
             product = Product()
             product.pk = prod_id
@@ -62,14 +67,14 @@ def update_prod(request, prod_id: int):
             # fs.save(image.name, image)
             product.save()
             message = f'Продукт: {product}\nизменен'
-            return render(request, 'shopapp/update_prod.html', {'message': message})
+            #return render(request, 'shopapp/update_prod.html', {'message': message})
 
     else:
         product = Product.objects.filter(pk=prod_id).first()
         form = UpdateProdForm()
         if product is not None:
             message = f'Внесите необходимые изменения в товар id={product.pk}, наименование - {product.name} '
-            return render(request, 'shopapp/update_prod.html', {'form': form, 'message': message})
+    return render(request, 'shopapp/update_prod.html', {'form': form, 'message': message})
 
 
 def upload_image(request):
@@ -82,3 +87,25 @@ def upload_image(request):
     else:
         form = ImageForm()
     return render(request, 'shopapp/upload_image.html', {'form': form})
+
+
+def image_create(request):
+    if request.method == 'POST':
+        # form is sent
+        form = ImageCreateForm(data=request.POST)
+        if form.is_valid():
+            # form data is valid
+            cd = form.cleaned_data
+            new_item = form.save(commit=False)
+
+            # assign current user to the item
+            new_item.user = request.user
+            new_item.save()
+            messages.success(request, 'Image added successfully')
+
+            # redirect to new created item detail view
+            return redirect(new_item.get_absolute_url())
+    else:
+        # build form with data provided by the bookmarklet via GET
+        form = ImageCreateForm(data=request.GET)
+    return render(request, 'shopapp/image/create.html', {'section': 'images', 'form': form})
